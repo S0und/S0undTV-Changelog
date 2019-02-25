@@ -1,0 +1,203 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <style>
+        html {
+            font-family: 'Segoe UI';
+            font-size: 20px;
+            padding-top: 75px;
+            padding-left: 100px;
+            padding-right: 100px;
+            background-color: #a30f2d;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            position: relative;
+        }
+
+        hr{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0; 
+            height: 1px; 
+            background: #333; 
+            background-image: linear-gradient(to right, #ccc, #000000, 0, 77), #ccc);
+        }
+        ul {
+            list-style: disc outside none;
+        }
+        li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        a:visited {
+            color : #412b6a;
+        }
+
+        a:link {
+            color:black
+        }
+
+        .legal {
+            text-align: center;
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>v1.2 (2019.02.25)</h1>
+    <h3>General:</h3>
+    <ul>
+        <li>Fixed a bug that "silently" crashed the app. You should feel a significant smoothness in scrolling on a row or between rows, exp.: on the Main screen</li>
+        <li>Moved most of the API loadings to Ion, this speeds up loading/reload times</li>
+        <li>ExoPlayer (2.9.5)</li>
+        <li>Setting: Auto refresh (explained in the Settings, ON by default and 20min)</li>
+        <li>Setting: UI Themes (red, blue, purple, green, pink, orange, yellow, grey)</li>
+    </ul>
+    <h3>Chat:</h3>
+    <ul>
+        <li>Improved Chat startup time</li>
+        <li>Significantly improved Emote loading times. This puts the app on par with the desktop experience. It's able to keep up even with xQc's "quality chat".</li>
+        <li>Setting: Show/hide Gifted subs messages in the chat (ON by default)</li>
+        <li>Improved readability of sub and gifted sub messages</li>
+        <li>FFZ channel enabled emotes are activated</li>
+        <li>Setting: Open soft keyboard when the send Chat message window is opened from the UI (ON by default). If you open the chat window with the keyboard shortcut (J or F) this will not affect you, even when the setting is ON.</li>
+        <li>Setting: Filter out popular bots and they command from chat</li>
+        <li>Setting: Filter 'chat bots' by name (OFF by default)</li>
+        <li>Setting: Join Chat (ON by default)</li>
+        <li>Setting: Chat delay (no delay by default)</li>
+        <li>Updated the ASCII dick filter with new characters (yes, there is such thing)</li>
+    </ul>
+
+    <h3>Notification: (NEW)</h3>
+    <ul>
+        <li>You get a notification when your followed streamer went live. This works even when the app is in the background.</li>
+        <li>The check runs every minute.</li>
+    </ul>
+
+    <h3>Stream:</h3>
+    <ul>
+        <h4>PeekRow: (NEW)</h4>
+            <li>With the DPAD_UP button on your remote, you can open a row of cards on the bottom of the screen while watching a stream. The row contains the Main screen's "Followed" row, so you can switch between your Followed online streams without going back to the Main screen.</li>
+            <li>Few settings added under Stream -> PeekRow</li>
+
+
+        <h4>General:</h4>
+        <li>Hosting is now supported, so if your current streamer starts to host someone else, the app automatically redirects to the hosted streamer.</li>
+        <li>Better playback error feedback, this is true for VOD as well.</li>
+        <li>Stat for nerds button: if you turned on the feature, you can open it now from the UI.</li>
+        <li>Settings: set default VOD video quality, Auto or Source (Default is Auto)</li>
+    </ul>
+
+    <h3>Fix:</h3>
+    <ul>
+        <li>Followed channels and games limit 25->100</li>
+        <li>Follower count formatting</li>
+        <li>If you are subbed to a channel, but you still can't access the sub-only VODs, a logout+login should fix that. In the near future i will fix this.</li>
+        <li>Fixed an issue that caused lower fps(<30fps) in the Stream Category while scrolling on Oreo</li>
+        <li>Fixed an issue when opening a Channel profile, colors didn't loaded in a certain situation</li>
+        <li>Fixed an issue when you couldn't see chat, because you had special characters in your name</li>
+        <li>Fixed a unresponsive UI bug on Oreo. Previously, after a while, the Main screen did not reacted to 'Refresh' and when you tried to watch something the Stream/VOD didn't loaded.</li>
+    </ul>
+
+
+    <h3>Etc:</h3>
+    <ul>
+        <li>Removed Card caching setting, because it's not necessary anymore.</li>
+        <li>Notification on the Main screen if you received a new app version. </li>
+    </ul>
+
+    <br>
+    <center><h4> If you have a question or feedback, head over to the Discord channel: </b>https://discord.gg/zmNjK2S </h4></center>
+
+    <!-- <br>
+
+    <center>
+        <h3>If you like my work and would like to support the development, you can do that through my Paypal account (daaell@gmail.com).</h3>
+    </center> -->
+
+    <br>
+    <hr>
+
+
+
+
+
+
+
+
+
+
+    <h1>v1.1.1 (2018.10.24)</h1>
+    <h3>General:</h3>
+    <ul>
+        <li>Removed an unused library</li>
+    </ul>
+    <h3>Settings:</h3>
+    <ul>
+        <li>Chat: Show/hide Subscription messages in the chat</li>
+        <li>Chat: Set Chat background color in fullscreen (video, chat side-by-side or BobRoss mode) </li>
+        <li>Chat: Filter messages by user or word (personally i filter out StreamElements and Nightbot)</li>
+        <li>Stream: Show or Hide control buttons on stream startup.</li>
+    </ul>
+
+    <br>
+    <hr>
+
+    <h1>v1.1 (2018.10.20)</h1>
+    <h3>General:</h3>
+    <ul>
+        <li>Exoplayer 2.9.0</li>
+        <li>targetSdkVersion 28</li>
+        <li>Replaced Picasso with Glide (~faster image loading)</li>
+
+        <li>Changelog implemented</li>
+        <li>Privacy Policy added</li>
+        <li>About: added Bottom bar icon descriptions</li>
+    </ul>
+
+    <h3>Major features:</h3>
+    <ul>
+        <li>VOD playback with Resume. Resume position is visible on the VOD Card.</li>
+        <li>User/Channel profiles: You can access Highlights, Past broadcasts and Uploads in the Channel Profile.</li>
+        <li>Follow and Favorite channel in the Channel profile </li>
+        <li>'Past broadcasts' and 'Followed Channels' are accessible on the Main screen.</li>
+        <li>Search (Stream, Channel, Game). To have Voice Search, you have to grant RECORD_AUDIO permission.</li>
+    </ul>
+    <h3>UI:</h3>
+    <ul>
+        <li>Streamer uptime on Cards and on the Stream bottom bar.</li>
+        <li>Visual tweak in Stream category (blurred + dimmed background)</li>
+        <li>Auto refresh on app switch (Main screen and Game category)</li>
+        <li>Long press to Refresh on any Card, except Followed Channels and Settings</li>
+        <li>Long press on Followed Channels to favorite them. By favoriting a channel, makes it appear in front of the list, for easy access.</li>
+        <li>Thumbnails should show a much more recent image on Stream cards. If you turned Off Thumbnail caching (Settings->Miscellaneous) previously, you can turn it back ON.</li>
+    </ul>
+
+    <h3>Stream:</h3>
+    <ul>
+        <li>Improved stream startup time</li>
+        <li>Chat: send chat message. You can open the message window by the the icon, 'J' or 'F' keys. To close it: BACK, ESC or ENTER in an empty message window.</li>
+        <li>Channel profile icon added</li>
+        <li>3 seconds delay on chat</li>
+    </ul>
+
+    <h3>Settings:</h3>
+    <ul>
+        <li>General settings: moved few settings into this sub category</li>
+        <li>General settings: Change Video card size (normal by default)</li>
+        <li>General settings: Hide any row on the Main screen</li>
+        <li>Stream settings: Video + Chat side by side (off by default)</li>
+    </ul>
+
+    <br>
+    <hr>
+</body>
+
+</html>
