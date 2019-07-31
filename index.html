@@ -53,6 +53,50 @@
 <body>
     <center><h4> If you have a question or feedback, head over to the Discord channel: </b>https://discord.gg/zmNjK2S </h4></center>
 
+
+    <hr>
+
+    <h1>v1.2.3 (2019.07.31)</h1>
+    <h3>Fix:</h3>
+    <ul>
+        <li>Video playback works with Pie now. Previously when you opened a stream, the stream was "offline".</li>
+        <li>Fixed a lot of memory leaks. "Stats for Nerds" is the only thing that leaks memory, i'm waiting for the library's maintainer to fix it.</li>
+    </ul>
+
+    <h3>General:</h3>
+    <ul>
+        <li>Google Assistant: you can open the app with voice command, like 'open/start Sound TV'</li>
+        <li>Stream should start in 1080p immediately, instead of 720p and switching up to 1080p right after it</li>
+    </ul>
+
+    <h3>Stream:</h3>
+    <ul>
+        <li>Video size button <td><img src="video_size.png" alt="" height="40" width="40"></td> has 3 states now: Normal, Shrink the view and keep the aspect ratio and Crop Zoom. This will cut off the sides of the video, but keeps the video height full screen.</li> 
+    </ul>
+
+    <h3>Known issues:</h3>
+    <ul>
+        <li>In the Channel profiles, video cards has the default theme color, instead of using the profile's color</li>
+        <li>Chat stops working for no reason. This affects the Shield and FireTV users, which is odd, because it works fine on Bravia or on the MiBox. I'm working on this.</li>
+        <li>Multiview: Audio swap might not work in some situation</li>
+    </ul>
+
+    This patch was in the works for a while now, and this quick Pie release for the Shield got me pants down, so i had to release. But this patch also has some sneak peek for the future. I don't do any "serious" development right now, i will start doing that ~mid-late September, but i included something in this build.
+
+    <h3>Early preview:</h3>
+    <h4>Multi view:</h4>
+    <ul>
+        <li>Opening the Peekview and long pressing on a card, the MultiView will open, with the selected stream.</li>
+        <li>With Dpad Down, you can swap between the two opened streams.</li>
+        <li>Bob Ross mode <td><img src="bob_ross.png" alt="" height="40" width="40"> is repurposed. With this you can swap the audio between the two stream. I will remove the Bob Ross mode in the future, because it's pointless now.</li>
+        <li>When Multiview is active, opening anything in the Peekview will open it in the Multiview</li>
+        <li>You can close the Multiview by long pressing on a card again, or pressing the Back button.</li>
+        <li>Right now the Multiview is in Auto quality, and you can't change it.</li>
+        <li>There is no Chat for the Multiview, but in the future there will be.</li>
+        <li>There will be an audio only mode, so Multiview will be audio only, and you can watch something on the main, and listen to someone else.</li>
+        <li>You might experience issues with this, because it's in early development. If your device is dropping a lot of frames (both streams are slow), this might due to it being underpowered. So i only expect this feature to work with 2017+ Bravias, Shield and with the Mibox. It didn't even worked with the FireTV.</li>
+    </ul>
+
     <hr>
 
     <h1>v1.2.2 (2019.04.14)</h1>
