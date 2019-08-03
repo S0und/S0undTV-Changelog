@@ -55,6 +55,20 @@
 
 
     <hr>
+    <h1>v1.2.4 (2019.08.04)</h1>
+    <h3>Fix:</h3>
+    <ul>
+        <li>Multiview: swapping audio should work now</li>
+        <li>MultiView: removed a "black out" animation during view swap, on a slower device you might see some graphical artifact during the swap.</li>
+        <li>Fixed Notifications on Pie</li>
+    </ul>
+
+    <h3>MultiView:</h3>
+    <ul>
+        <li>DPad_DOWN short press: swap between the views</li>
+        <li>DPad_DOWN long press: swap the <b>audio</b> between the views</li>
+    </ul>
+    <hr>
 
     <h1>v1.2.3 (2019.07.31)</h1>
     <h3>Fix:</h3>
@@ -78,7 +92,6 @@
     <ul>
         <li>In the Channel profiles, video cards has the default theme color, instead of using the profile's color</li>
         <li>Chat stops working for no reason. This affects the Shield and FireTV users, which is odd, because it works fine on Bravia or on the MiBox. I'm working on this.</li>
-        <li>Multiview: Audio swap might not work in some situation</li>
     </ul>
 
     This patch was in the works for a while now, and this quick Pie release for the Shield got me pants down, so i had to release. But this patch also has some sneak peek for the future. I don't do any "serious" development right now, i will start doing that ~mid-late September, but i included something in this build.
