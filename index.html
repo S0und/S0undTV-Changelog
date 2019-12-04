@@ -10,7 +10,7 @@
             padding-top: 75px;
             padding-left: 100px;
             padding-right: 100px;
-            background-color: #a30f2d;
+            background-color: #a30f2d00;
             color: white;
         }
         h1 {
@@ -56,9 +56,64 @@
 
     <hr>
 
+    <h1>BETA v1.3.0 (2019.xx.xx)</h1>
+
+
+    <h3>PeekView 2.0</h3>
+    <ul>
+        <li>It has multiple rows now. Everything that you can access on the Main screen you can access in PV, except Channel profiles, Past Broadcasts and the Settings row</li>
+        <li>The rows visibility obeys your settings in General -> 'Show/hide rows on Main screen' and 'Stream language row'. So if you hid something on the Main screen, that row won't show up in PV.</li>
+        <li>By default the topmost row shows the same category that you are already watching. So if your currently viewed streamer plays Apex, this row will show every Apex streamer. </li>
+        <li>If a row is empty (exp. non of your followed steamer are streaming currently), the row indicator temporarily turns red and the row is skipped.</li>
+    </ul>
+
+    <h3>Stream:</h3>
+    <ul>
+        <li>Video quality: the menu got revamped. Changing quality should be much easier now.</li>
+        <li>Chat size and position buttons are merged into one. Remote shortcut: Rewind/Prev</li>
+        <li>Multiview size and position button added. Remote shortcut: Forward/Next</li>
+        <li>Both of these edit modes can be closed by the BACK, DPAD_CENTER buttons, or toggle it with the remote shortcut</li>
+    </ul>
+
+    <h3>Chat:</h3>
+    <ul>
+        <li>Added Partner, VIP and Broadcaster icons</li>
+    </ul>
+
+
+    <h3>Settings:</h3>
+    <ul>
+        <li>Chat: font size (this also scales emotes and chat window width)</li>
+        <li>Chat: new window sizes from 50,100% to 25,33,50,66,75,100%</li>
+        <li>Chat: new window positions</li>
+        <li>Stream: Multiview position</li>
+        <li>Stream: Multiview size</li>
+        <li>Stream: Video + chat side by side scale mode: Fit to screen or Center crop</li>
+        <li>"Tree icon" removed, and replaced with an audio swap button. If you have a Multiview open you can swap between the two video's audio. Either with this button or long pressing your DPAD Down button.</li>
+    </ul>
+
+    <h3>General:</h3>
+    <ul>
+        <li>Main screen: remote shortcuts: Play/Pause button: Refresh, Rewind button: open Settings</li>
+        <li>Changing a theme will automatically restarts the app. My solution might not work on every device, please test it and report back if you have problems! It should restart with your selected theme.</li>
+        <li>Exoplayer updated to 2.10.8</li>
+        <li>Added Google Firebase Crashlytics, Analytics, Performance. These are for more detailed crash reports, app usage and performance numbers. With these information i can improve the app reliability and performance in the future.</li>
+        <li>Project updated to AndroidX</li>
+        <li>Lowered a couple of unnecessarily long UI animations</li>
+        <li>Added a reminder to the Main screen when a new app version is released</li>
+    </ul>
+
+    <h3>Fix:</h3>
+    <ul>
+        <li>Watching a stream then going back to the OS home screen, and then launching the app again with it's icon, should resume the stream, instead of landing on app's Main screen.</li>
+        <li>Fixed a crash which occurred in the Settings</li>
+        <li>Show the correct uptime in hours and minutes if the stream is up for more then 24h (thanks LAM09)</li>
+        <li>Empty rows are removed on the Main screen, so if no followed stream is live the row is hidden</li>
+    </ul>
+
+    <hr>
+
     <h1>v1.2.5 (2019.11.14)</h1>
-
-
     <p>If you are using any other 3rd party Twitch apps you might noticed that, all the sudden they have a lot of issues. We don't really know the actual reason behind this. Maybe Twitch is changing the APIs or the servers are having performance issues. Some APIs are working correctly then a day later we can't access them anymore, few hours later it's fine again. ¯\_(ツ)_/¯</p>
 
     <p>Whatever is going on at Twitch, i'm hoping that it will be solved soon, and that "solution" won't affect us in any negative way. Twitch is using it's own APIs, meanwhile we - the plebs - are using APIs for 3rd party developers. This is why the official Twitch products are working correctly while our apps are failing.</p>
