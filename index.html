@@ -51,41 +51,12 @@
 </head>
 
 <body>
-    <center><h4> If you have a question or feedback, head over to the Discord channel: </b>https://discord.gg/zmNjK2S </h4></center>
+    <center><h4> If you have a question or feedback, head over to the Discord channel: https://discord.gg/zmNjK2S </h4></center>
 
     <hr>
 
-    <h1>BETA v1.3.1 (2019.12.09)</h1>
 
-    <h3>Important!</h3>
-    <ul>
-        <li>Check Settings -> Stream -> <b>Video + chat side by side scale mode</b>. After this update this setting is might be empty, set it to either "Fit to screen" or "Center crop". </li>
-    </ul>
-
-
-    <h3>Fix</h3>
-    <ul>
-        <li>Stream: prevent multiview and chat edit to be active at the same time</li>
-        <li>Stream: Video + chat side-by-side should be working now, please mess with it</li>
-        <li>Channel profile: Past broadcast row has the correct profile color</li>
-        <li>Fixed a crash on startup</li>
-        <li>Stream: fixed Side-by-side related crash</li>
-    </ul>
-
-    <h3>Stream:</h3>
-    <ul>
-        <li>New icon for LIVE and RERUN on the Peekview card</li>
-        <li>I've changed the Play/Pause shortcut: short press -> Video+Chat side-by-side mode, long press -> Chat show/hide</li>
-    </ul>
-
-    <h3>Known issues:</h3>
-    <ul>
-        <li>Chat show/hide will restore your default chat size instead of keeping the current one.</li>
-    </ul>
-    <hr>
-
-    <h1>BETA v1.3.0 (2019.xx.xx)</h1>
-
+    <h1>v1.3.0 (2019.12.17)</h1>
     <h3>PeekView 2.0</h3>
     <ul>
         <li>It has multiple rows now. Everything that you can access on the Main screen you can access in PV, except Channel profiles, Past Broadcasts and the Settings row</li>
@@ -100,11 +71,14 @@
         <li>Chat size and position buttons are merged into one. Remote shortcut: Rewind/Prev</li>
         <li>Multiview size and position button added. Remote shortcut: Forward/Next</li>
         <li>Both of these edit modes can be closed by the BACK, DPAD_CENTER buttons, or toggle it with the remote shortcut</li>
+        <li>New icon for LIVE and RERUN on the Peekview card</li>
+        <li>I've changed the Play/Pause shortcut: short press -> Video+Chat side-by-side mode, long press -> Chat show/hide</li>
+        <li>Tooltips on Control buttons, you can turn this off in the Settings -> Stream</li>
     </ul>
 
     <h3>Chat:</h3>
     <ul>
-        <li>Added Partner, VIP and Broadcaster icons</li>
+        <li>Added Partner, Prime, VIP and Broadcaster icons. You can hide the Prime icon in Settings -> Chat.</li>
     </ul>
 
 
@@ -116,13 +90,15 @@
         <li>Stream: Multiview position</li>
         <li>Stream: Multiview size</li>
         <li>Stream: Video + chat side by side scale mode: Fit to screen or Center crop</li>
+        <li>Stream: *NEW* Clock settings. You see the current time and date during a stream, by turn on the control buttons. You can also turn on 3 customizable "World Clock". </li>
+        <li>Stream: Show tooltips on control buttons (ON by default)</li>
         <li>"Tree icon" removed, and replaced with an audio swap button. If you have a Multiview open you can swap between the two video's audio. Either with this button or long pressing your DPAD Down button.</li>
     </ul>
 
     <h3>General:</h3>
     <ul>
         <li>Main screen: remote shortcuts: Play/Pause button: Refresh, Rewind button: open Settings</li>
-        <li>Changing a theme will automatically restarts the app. My solution might not work on every device, please test it and report back if you have problems! It should restart with your selected theme.</li>
+        <li>Changing a theme will automatically restarts the app. The app should restart in a couple of seconds with your selected theme.</li>
         <li>Exoplayer updated to 2.10.8</li>
         <li>Added Google Firebase Crashlytics, Analytics, Performance. These are for more detailed crash reports, app usage and performance numbers. With these information i can improve the app reliability and performance in the future.</li>
         <li>Project updated to AndroidX</li>
@@ -135,14 +111,18 @@
         <li>Watching a stream then going back to the OS home screen, and then launching the app again with it's icon, should resume the stream, instead of landing on app's Main screen.</li>
         <li>Fixed a crash which occurred in the Settings</li>
         <li>Show the correct uptime in hours and minutes if the stream is up for more then 24h (thanks LAM09)</li>
-        <li>Empty rows are removed on the Main screen, so if no followed stream is live the row is hidden</li>
+        <li>Empty rows are removed on the Main screen, so if no followed stream is live, the row is hidden</li>
+        <li>'Video + chat side by side by default' and 'Auto show chat on playback' works as expected. Keep in mind that side-by-side mode has 3 states: Normal, Fit to screen, Center crop. If 'Auto show chat on playback' is OFF, side-by-side's default state will be in Normal mode. So if you press 'Show Chat' in this state, nothing will happen. You have to enter side-by-side mode first (fit to scren / center crop), then 'Show chat' will behave as expected.</li>
+        <li>Channel profile: Past broadcast row has the correct profile color</li>
+        <li>NVIDIA Shield's menu or Sony Bravia's Action Menu won't pause the stream anymore.</li>
     </ul>
     
     <h3>Known issues:</h3>
     <ul>
         <li>Twitch changed they APIs and you are unable to follow/unfollow categories. There is a possible way to circumvent this, so i might be able to fix it in the future</li>
     </ul>
-    
+
+    <center><h4> Merry Christmas and a Happy New Year!</h4></center>
     <hr>
 
     <h1>v1.2.5 (2019.11.14)</h1>
