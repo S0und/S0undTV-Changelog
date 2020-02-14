@@ -52,6 +52,34 @@
 
 <body>
     <center><h4> If you have a question or feedback, head over to the Discord channel: https://discord.gg/zmNjK2S </h4></center>
+    <hr>
+    <h1>v1.3.4.1 BETA (2020.02.14)</h1>
+
+    <h3>Settings</h3>
+    <ul>
+        <li>Stream -> Peekview: 'Compatibility mode' (OFF by default)</li>
+    </ul>
+
+    <h3>Search</h3>
+    <ul>
+        <li>Previews added to Stream cards</li>
+    </ul>
+
+    <h3>Fix:</h3>
+    <ul>
+        <li>Stream: missing 'audio_only' quality</li>
+        <li>Stream: incorrect video quality name when the default video quality was 'Source'</li>
+        <li>Search: crash fix</li>
+        <li>Preview: first card in each row plays the preview as expected</li>
+        <li>Stream -> Peek Preivew: Viewer count is always visible, also removed 'viewers' text</li>
+        <li>Not using the app for minues would result 'Stream stopped' errors in Previews</li>
+    </ul>
+
+   <h3>Known issues:</h3>
+   <ul>
+       <li>Switching between stream rows (for example in Categories, when you have the language row enabled) can cause a preview playback to start even tho nothing is <b>visibly</b> selected</li>
+   </ul>
+
 
     <hr>
     <h1>v1.3.4 BETA (2020.02.12)</h1>
@@ -61,7 +89,7 @@
         <li>With this new version i introduce a pretty cool feature called 'Stream preview'. Selecting any live stream card on the UI will start to playback the stream on that card itself.</li>
         <li>The feature works both on the Main/Category UI and the Peek view. </li> 
         <li>Preview video played at 720@60 max.</li>
-        <li>Some bad news. Peekview previews. If multiview never worked for you previously, previews will not work either. I can't help you with this, i'm sorry, this is beyond my pay grade. It's a hardware limitation or a compatibility issue with ExoPlayer. My 2019 Shield is able to playback a stream, a multiview and the preview simultaneously without any issue. Meanwhile my X900F Bravia can only playback two streams, it's either the preview or the multiview. I'm aware that some lower end devices can only playback one stream.</li>
+        <li>Some bad news. Peekview previews. If multiview never worked for you previously, previews will not work either. I can't help you with this, i'm sorry, this is beyond my pay grade. It's a hardware limitation or a compatibility issue with ExoPlayer. My 2019 Shield is able to playback a stream, a multiview and the preview simultaneously without any issue. Meanwhile my X900F Bravia can only playback two streams, it's either the preview or the multiview. I'm aware that some lower end devices can only playback one stream. If you can only use 2 simultaneously streams, turn on 'Compatibility mode'.</li>
     </ul>
 
     <h3>Settings</h3>
@@ -75,7 +103,7 @@
 
     <h3>Peekview:</h3>
     <ul>
-        <li>If 'Stream preview' is ON, the selected card is bigger (from 117% to 150%) so you can see the preview better. Also view count, update, etc are off, so they don't obscure the view.</li>
+        <li>If 'Stream preview' is ON, the selected card is bigger (from 117% to 150%) so you can see the preview better. Also language, uptime and status is off, so they don't obscure the view.</li>
         <li>The selected card stays in the middle while scrolling</li>
         <li>If you experience any issue with the previews, i recommend you to turn this feature off.</li>
     </ul>
@@ -112,11 +140,6 @@
         <li>Channel profile: didn't load the VODs in a rare situation</li>
     </ul>
     
-   <h3>Known issues:</h3>
-   <ul>
-       <li>The Followed section first card won't start the preview in a certain situation.</li>
-       <li>Switching between stream rows (for example in Categories, when you have the language row enabled) can cause a preview playback to start even tho nothing is <b>visibly</b> selected</li>
-   </ul>
     
 
     <hr>
