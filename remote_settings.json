@@ -1,7 +1,6 @@
 {
 	"hls_params": [
-		"platform=web",
-		"player_backend=mediaplayer",
-		"player_type=frontpage"
+		"platform=android",
+		"player_type=mobile_player"
 	] 
 }
