@@ -53,6 +53,65 @@
 <body>
     <center><h4> If you have a question or feedback, head over to the Discord channel: https://discord.gg/zmNjK2S </h4></center>
     <hr>
+
+    <h1>v1.3.8 (2020.11.25) </h1>
+
+
+    <h3>General:</h3>
+    <ul>
+        <li>Dark grey is the default theme color, for new users</li>
+        <li>Game card size slightly reduced (by 10%) on the Main screen</li>
+        <li>Updated ExoPlayer to 2.12.1</li>
+        <li>Previously added Turbo login was removed, due to API changes, i need time to figure out a way to use it again. Because of this, i logged you out if use used Turbo.</li>
+    </ul>
+
+    <h3>Stream</h3>
+    <ul>
+        <li>*NEW*: MultiWatch: a new mode to watch two streams at the same time, with both stream's chat visible on the sides. If you have multiview active, the VideoSize button <img src="video_size2.png" alt="" height="25" width="31"> turn into this icon <img src="multiwatch.png" alt="" height="25" width="31"> You can activate this mode either with this icon, or the VideoSize remote shortcut. In the next update i will a add better stream volume control.</li>
+        <li>Stream navigation preview cards: switching between streams with DPAD_LEFT / RIGHT the previous and the next stream's preview card is shown. This way you can see what will be the next stream, if you are keep switching.</li>
+        <li>Stream navigation: it works with the Multiview as well. To activate it, <b>Long press</b> DPAD_LEFT / DPAD_RIGHT or CHANNEL_UP / CHANNEL_DOWN</li> 
+        <li>Stream navigation: flipped CHANNEL_UP and CHANNEL_DOWN remote button functionality. CHANNEL_UP goes "left side" (higher viewer count), CHANNEL_DOWN goes the "right side" (lower viewer count)</li>
+        <li>Show/Hide Chat button: it gains a new ability if the Multiview is active. <b>Long pressing</b> the button, you can toggle between the two chats. There is a new remote shortcut for this.</li>
+        <li>Multiview: if you switch multiview to full screen (DPAD_DOWN while the multiview is active), bottom bar will show the correct stream information, chat.</li>
+    </ul>
+
+    <h3>Chat</h3>
+    <ul>
+        <li>Switched chat from IRC to WebSockets. Chat is more "responsive" now (turns out there is difference between the two). If you had trouble seeing chat in the past, this should solve this. If you see an Authentication error in chat, you have to re-login.</li>
+        <li>Multiview also joins chat.</li>
+        <li>Channel mode is visible in chat or in the send chat message window</li>
+        <li>Animated GIF library is replaced, if you had issues with the GIF emotes in the past and turned that option off, turn it back on.</li>
+    </ul>
+
+    <h3>Settings</h3>
+    <ul>
+        <li>Device specific settings: this new menu will contain the device specific fixes</li>
+        <li>Device specific settings: Mibox: this fix applies to MIBOX3 and MIBOX4 automatically. These devices have an issue, when a non standard resolution (exp. 900p) is being played, the audio goes out of sync. This fix removes the non standard resolutions from Auto quality, so the player can't select non-standard resolution, so the audio won't go out of sync. Someone mentioned it on Discord that Android 9 OS update will fix this. If that happens you can turn this off. </li>
+        <li>General -> Stream language row: Make the Language row the first row inside Game category. PeekView also follows this setting.</li>
+        <li>Remote shortcuts: Swap chats added</li>
+        <li>Remote shortcuts: Play/Pause added</li>
+        <li>Remote shortcuts: Menu button added. Tip: On the NVIDIA Shield you can Customize the Menu button. Personally i've changed it to short: "Menu" command, long: "Long press Menu", double press: Open Settings. You need to be on the lastest Shield update!</li>
+        <li>Stream: Show stream navigation preview cards</li>
+        <li>Stream: Show stream navigation cards for Multi view</li>
+        <li>Stream: Show Preview cards when you open the Bottom bar</li>
+        <li>Stream: Show the thumbnail part of the preview card</li>
+        <li>Stream: Viewbot / embeded stream detector. This is for fun, don't keep it on, because it slows down the BottomBar</li>
+    </ul>
+
+    <h3>Fix:</h3>
+    <ul>
+        <li>Followed Game section is working again</li>
+        <li>Multiple Twitch API change related issues</li>
+        <li>Recommendation channels shows the correct preview image (Thanks Jman100) This was fixed in a previous version</li>
+        <li>FireTV: fixed "Stream stopped" issue when you tried to watch specific type of games. Exp.: Pokémon, TrackMania2, new SpongeBob (Thanks Dev8 and SalmonMax)</li>
+        <li>VOD past broadcast didn't loaded more then a 100 streams (Thanks Athey)</li>
+        <li>App won't restart if you turn on or off your Bluetooth keyboard</li>
+        <li>Chat: replaced the gif emote library. This should fix that rare bug, when multiple gif emotes were played on the same emote</li>
+        <li>Tutorial crashed when the system language is set to a "right to left" language like Arabic. In this case i had to disable the tutorial, this is a framework issue. The tutorial still works with LtR languages. (Thanks Nomad)</li>
+        <li>Fire TV: Search is working now</li>
+        <li>Stream Category: ability to follow a game has been removed.</li>
+    </ul>
+
     <h1>v1.3.7.4 (2020.11.06)</h1>
     <ul>
         <li>New login option: login with Turbo, check the 30days option. You might have to relog every 30 days. Please, only use this option if you actually have a Turbo subscription. You're not ticking anyone.</li>
@@ -77,6 +136,7 @@
         <li>New beta soon</li>
     </ul>
 
+    <hr>
     <h1>v1.3.7 (2020.05.24)</h1>
 
     <h3>Switching between channels</h3>
