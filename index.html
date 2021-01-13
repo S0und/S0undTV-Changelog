@@ -54,6 +54,67 @@
     <center><h4> If you have a question or feedback, head over to the Discord channel: https://discord.gg/zmNjK2S </h4></center>
     <hr>
 
+    
+    <h1>v1.3.10 (2021.01.13)</h1>
+
+    <h3>General:</h3>
+    <ul>
+        <li>Context Menu: added a context menu for the Stream, Game and Channel cards. LONG PRESS BACK button opens it. You can quickly follow, open Channel Profile or Filter out cards.</li>
+    </ul>
+
+    <h3>Stream:</h3>
+    <ul>
+        <li>Search button added. On the keyboard 'K' button opens it.</li>
+        <li>'Save VOD resume position' button added. This used to be only accessable through Remote Shortcuts</li>
+    </ul>
+    <h3>Chat:</h3>
+    <ul>
+        <li>Increased the default emote size, which you can change in the settings.</li>
+        <li>Slightly changed the chat message alignment</li>
+    </ul>
+    <h3>Settings:</h3>
+    <ul>
+        <li>Chat: Change Emote size</li>
+        <li>Remote shortcut: Search</li>
+        <li>General: Filter channels, categories: you can filter out specific channels or categories. 'Filter categories' also filters out streams that "plays" those categories. This means you can wipe out those categories on the whole platform.</li>
+        <li>Stream settings / VOD settings: Default Stream video quality: two new options added, Auto (max 1080p), Auto (max 720p). The resolution can switch below these, but can't go above</li>
+        <li>Device specific settings: If MultiView or PeekView Previews are not showing AND you don't see an error message in the view, this might help. It's ON by default on Amazon and Philips devices. If you have this issue and this fix solves it and your device manufacturer is something else, please contact me, so i can add it.</li>
+        <li>Device specific settings: Moved "Peekview Previews Compatibility mode" into this category. If the previous fix helps, you might need this.</li>
+    </ul>
+
+
+    <h3>"Mobile support":</h3>
+    <ul>
+        <li>Added touch controls to the Player, so you can access the majority of the features</li>
+        <li>Double tap: opens the bottom bar</li>
+        <li>Long press: send a BACK key event</li>
+        <li>In the Peekview: to scroll Up/Down you have to select a card, and do the Up/Down gesture but NOT on the Peekview itself, but above it. So for these gesture don't touch the Peekview itself.</li>
+        <li>Longpress Up/Down/Left/Right doesn't work</li>
+        <li>Optimized the player size for custom resolutions and notches</li>
+        <li>I've preapplied a few settings specifically for touch support</li>
+        <li>Main screen is still designed for TVs, so touch navigation is cumbersome.</li>
+    </ul>
+
+    <h3>Fix:</h1>
+    <ul>
+        <li>Fix for "Stream stopped" issue. Btw nice timing Twitch, or should i say, pretty PogChamp? <img src="https://cdn.betterttv.net/emote/5c548025009a2e73916b3a37/3x" alt="" height="30" width="30"></li>
+        <li>Multiview and Peekview preview fix for Amazon and Philips devices</li>
+        <li>Chat: Open keyboard with the Chat window: this setting works with Gboard, so if it's OFF, Gboard won't open.</li>
+        <li>VOD Auto hide: did not worked since 2021</li>
+        <li>Multiview's chat did not start after switching back to the app</li>
+    </ul>
+
+    <h3>Standalone version:</h3>
+    <ul>
+        <li>I will release a new version of app for those who don't have access to Google Play Store</li>
+        <li>The only difference is that version will have it's own Auto Update system, similar how SmartTubeNext works</li>
+        <li>The Google Play Store version cannot contain any 3rd party auto update system (it's against the TOS), so it has to be a separate variant</li>
+        <li>It will be avaiable on Discord or at www.github.com/S0und/S0undTV/releases </li>
+        <li>For Aptoide users: i will upload the standalone version there, and from now on that's how the app will be updated.</li>
+    </ul>
+
+
+    <hr>
     <h1>v1.3.9 (2020.12.06)</h1>
 
     <h3>Stream:</h3>
@@ -78,6 +139,7 @@
         <li>Recommendation channels: should update more reliably</li>
         <li>Fixed a crash during VOD playback</li>
     </ul>
+    <hr>
 
     <h1>v1.3.8 (2020.11.25) </h1>
 
@@ -137,6 +199,7 @@
         <li>Stream Category: ability to follow a game has been removed.</li>
     </ul>
 
+    <hr>
     <h1>v1.3.7.4 (2020.11.06)</h1>
     <ul>
         <li>New login option: login with Turbo, check the 30days option. You might have to relog every 30 days. Please, only use this option if you actually have a Turbo subscription. You're not ticking anyone.</li>
@@ -145,16 +208,19 @@
         <li>Don't get me wrong, i don't want to tell you how you should spend your money, but this "cat and mouse" game lasted this long, because the cat allowed it. No app or script blocked ads in the past. Twitch simply left loopholes open and we used those.</li>
     </ul>
 
+    <hr>
     <h1>v1.3.7.3 (2020.11.04)</h1>
     <ul>
         <li>Changed when the remote settings are loaded. I also load them when you get back to the Main screen. </li>
     </ul>
 
+    <hr>
     <h1>v1.3.7.2 (2020.10.28)</h1>
     <ul>
         <li>Fixed the ad issue. This won't work, if you are blocking github host with firewall or Pi-hole.</li>
     </ul>
 
+    <hr>
     <h1>v1.3.7.1 (2020.10.01)</h1>
     <ul>
         <li>Fixed the ad issue</li>
@@ -751,6 +817,12 @@
     <ul>
         <li>Removed an unused library</li>
     </ul>
+
+    <h3>Stream:</h3>
+    <ul>
+        <li>BottomBar: Save stream's position as a VOD resume point. This used to be only a remote shortcut function, but now you have a direct access to it on the UI.</li>
+    </ul>
+
     <h3>Settings:</h3>
     <ul>
         <li>Chat: Show/hide Subscription messages in the chat</li>
