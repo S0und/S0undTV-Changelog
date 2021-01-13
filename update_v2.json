@@ -1,0 +1,34 @@
+[
+    {
+        "APK": "release.apk",
+        "ReleaseDate": "2021-01-04T19:49:40.856Z",
+        "ReleaseType": 0,
+        "VersionCode": 104,
+        "VersionName": "v1.4.0",
+        "hasChangeLog": true
+    },
+    {
+        "APK": "beta.apk",
+        "ReleaseDate": "2021-01-04T19:49:40.893Z",
+        "ReleaseType": 1,
+        "VersionCode": 103,
+        "VersionName": "v1.4.1",
+        "hasChangeLog": true
+    },
+    {
+        "APK": "experimental.apk",
+        "ReleaseDate": "2021-01-04T19:49:40.893Z",
+        "ReleaseType": 2,
+        "VersionCode": 104,
+        "VersionName": "v1.4.1",
+        "hasChangeLog": false
+    },
+    {
+        "APK": "",
+        "ReleaseDate": "",
+        "ReleaseType": 3,
+        "VersionCode": 102,
+        "VersionName": "v1.3.10",
+        "hasChangeLog": false
+    }
+]
