@@ -1,0 +1,889 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <style>
+        html {
+            font-family: 'Segoe UI';
+            font-size: 20px;
+            padding-top: 75px;
+            padding-left: 100px;
+            padding-right: 100px;
+            background-color: #a30f2d;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            position: relative;
+        }
+
+        hr{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0; 
+            height: 1px; 
+            background: #333; 
+            background-image: linear-gradient(to right, #ccc, #000000, 0, 77), #ccc);
+        }
+        ul {
+            list-style: disc outside none;
+        }
+        li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        a:visited {
+            color : #412b6a;
+        }
+
+        a:link {
+            color:black
+        }
+
+        .legal {
+            text-align: center;
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center><h4> If you have a question or feedback, head over to the Discord channel: https://discord.gg/zmNjK2S </h4></center>
+    <hr>
+
+    testing, testing
+    
+    <hr>
+    <h1>v1.3.10 (2021.01.13)</h1>
+
+    <h3>General:</h3>
+    <ul>
+        <li>Context Menu: added a context menu for the Stream, Game and Channel cards. LONG PRESS BACK button opens it. You can quickly follow, open Channel Profile or Filter out cards.</li>
+    </ul>
+
+    <h3>Stream:</h3>
+    <ul>
+        <li>Search button added. On the keyboard 'K' button opens it.</li>
+        <li>'Save VOD resume position' button added. This used to be only accessable through Remote Shortcuts</li>
+    </ul>
+    <h3>Chat:</h3>
+    <ul>
+        <li>Increased the default emote size, which you can change in the settings.</li>
+        <li>Slightly changed the chat message alignment</li>
+    </ul>
+    <h3>Settings:</h3>
+    <ul>
+        <li>Chat: Change Emote size</li>
+        <li>Remote shortcut: Search</li>
+        <li>General: Filter channels, categories: you can filter out specific channels or categories. 'Filter categories' also filters out streams that "plays" those categories. This means you can wipe out those categories on the whole platform.</li>
+        <li>Stream settings / VOD settings: Default Stream video quality: two new options added, Auto (max 1080p), Auto (max 720p). The resolution can switch below these, but can't go above</li>
+        <li>Device specific settings: If MultiView or PeekView Previews are not showing AND you don't see an error message in the view, this might help. It's ON by default on Amazon and Philips devices. If you have this issue and this fix solves it and your device manufacturer is something else, please contact me, so i can add it.</li>
+        <li>Device specific settings: Moved "Peekview Previews Compatibility mode" into this category. If the previous fix helps, you might need this.</li>
+    </ul>
+
+
+    <h3>"Mobile support":</h3>
+    <ul>
+        <li>Added touch controls to the Player, so you can access the majority of the features</li>
+        <li>Double tap: opens the bottom bar</li>
+        <li>Long press: send a BACK key event</li>
+        <li>In the Peekview: to scroll Up/Down you have to select a card, and do the Up/Down gesture but NOT on the Peekview itself, but above it. So for these gesture don't touch the Peekview itself.</li>
+        <li>Longpress Up/Down/Left/Right doesn't work</li>
+        <li>Optimized the player size for custom resolutions and notches</li>
+        <li>I've preapplied a few settings specifically for touch support</li>
+        <li>Main screen is still designed for TVs, so touch navigation is cumbersome.</li>
+    </ul>
+
+    <h3>Fix:</h1>
+    <ul>
+        <li>Fix for "Stream stopped" issue. Btw nice timing Twitch, or should i say, pretty PogChamp? <img src="https://cdn.betterttv.net/emote/5c548025009a2e73916b3a37/3x" alt="" height="30" width="30"></li>
+        <li>Multiview and Peekview preview fix for Amazon and Philips devices</li>
+        <li>Chat: Open keyboard with the Chat window: this setting works with Gboard, so if it's OFF, Gboard won't open.</li>
+        <li>VOD Auto hide: did not worked since 2021</li>
+        <li>Multiview's chat did not start after switching back to the app</li>
+    </ul>
+
+    <h3>Standalone version:</h3>
+    <ul>
+        <li>I will release a new version of app for those who don't have access to Google Play Store</li>
+        <li>The only difference is that version will have it's own Auto Update system, similar how SmartTubeNext works</li>
+        <li>The Google Play Store version cannot contain any 3rd party auto update system (it's against the TOS), so it has to be a separate variant</li>
+        <li>It will be avaiable on Discord or at www.github.com/S0und/S0undTV/releases </li>
+        <li>For Aptoide users: i will upload the standalone version there, and from now on that's how the app will be updated.</li>
+    </ul>
+
+
+    <hr>
+    <h1>v1.3.9 (2020.12.06)</h1>
+
+    <h3>Stream:</h3>
+    <ul>
+        <li>"Precise" chat height and width modification: activating the "Change chat size and position" button <img src="resize_chat.png" alt="" height="36" width="30"> and with CENTER button you can toggle to the "Precise" mode. DPAD Left/Right/Up/Down to modify the chat. BACK to close this window.</li>
+        <li>Volume Control for Multiview: Swap Audio <img src="swap_audio2.png" alt="" height="30" width="30"> on the UI has been replaced by Volume Control of MultiView. If MV is active, you can open a UI to control both stream's volume. LONG press DPAD_DOWN still just swaps the audio. A separete Remote Shortcut is added for the new Volume Control UI.</li>
+    </ul>
+
+
+    <h3>Settings:</h3>
+    <ul>
+        <li>Chat: Default Chat width</li>
+        <li>Stream: Press BACK twice to close the Stream: since this feature was really popular <img src="https://cdn.frankerfacez.com/emoticon/218860/2" alt="" height="21" width="8">, it's a setting now, and it's OFF by default </li>
+        <li>Remote Shortcuts: Volume Control for MultiView</li>
+        <li>Miscellaneous: Skip Tutorial: the tutorial can cause issues on some devices / configurations</li>
+    </ul>
+
+    <h3>Fix:</h3>
+    <ul>
+        <li>Mibox: the audio sync actually works this time</li>
+        <li>Stream: after a resolution drop the player didn't swiched back to a higher resolution</li>
+        <li>Recommendation channels: should update more reliably</li>
+        <li>Fixed a crash during VOD playback</li>
+    </ul>
+    <hr>
+
+    <h1>v1.3.8 (2020.11.25) </h1>
+
+
+    <h3>General:</h3>
+    <ul>
+        <li>Dark grey is the default theme color, for new users</li>
+        <li>Game card size slightly reduced (by 10%) on the Main screen</li>
+        <li>Updated ExoPlayer to 2.12.1</li>
+        <li>Previously added Turbo login was removed, due to API changes, i need time to figure out a way to use it again. Because of this, i logged you out if use used Turbo.</li>
+    </ul>
+
+    <h3>Stream</h3>
+    <ul>
+        <li>*NEW*: MultiWatch: a new mode to watch two streams at the same time, with both stream's chat visible on the sides. If you have multiview active, the VideoSize button <img src="video_size2.png" alt="" height="25" width="31"> turn into this icon <img src="multiwatch.png" alt="" height="25" width="31"> You can activate this mode either with this icon, or the VideoSize remote shortcut. In the next update i will a add better stream volume control.</li>
+        <li>Stream navigation preview cards: switching between streams with DPAD_LEFT / RIGHT the previous and the next stream's preview card is shown. This way you can see what will be the next stream, if you are keep switching.</li>
+        <li>Stream navigation: it works with the Multiview as well. To activate it, <b>Long press</b> DPAD_LEFT / DPAD_RIGHT or CHANNEL_UP / CHANNEL_DOWN</li> 
+        <li>Stream navigation: flipped CHANNEL_UP and CHANNEL_DOWN remote button functionality. CHANNEL_UP goes "left side" (higher viewer count), CHANNEL_DOWN goes the "right side" (lower viewer count)</li>
+        <li>Show/Hide Chat button: it gains a new ability if the Multiview is active. <b>Long pressing</b> the button, you can toggle between the two chats. There is a new remote shortcut for this.</li>
+        <li>Multiview: if you switch multiview to full screen (DPAD_DOWN while the multiview is active), bottom bar will show the correct stream information, chat.</li>
+    </ul>
+
+    <h3>Chat</h3>
+    <ul>
+        <li>Switched chat from IRC to WebSockets. Chat is more "responsive" now (turns out there is difference between the two). If you had trouble seeing chat in the past, this should solve this. If you see an Authentication error in chat, you have to re-login.</li>
+        <li>Multiview also joins chat.</li>
+        <li>Channel mode is visible in chat or in the send chat message window</li>
+        <li>Animated GIF library is replaced, if you had issues with the GIF emotes in the past and turned that option off, turn it back on.</li>
+    </ul>
+
+    <h3>Settings</h3>
+    <ul>
+        <li>Device specific settings: this new menu will contain the device specific fixes</li>
+        <li>Device specific settings: Mibox: this fix applies to MIBOX3 and MIBOX4 automatically. These devices have an issue, when a non standard resolution (exp. 900p) is being played, the audio goes out of sync. This fix removes the non standard resolutions from Auto quality, so the player can't select non-standard resolution, so the audio won't go out of sync. Someone mentioned it on Discord that Android 9 OS update will fix this. If that happens you can turn this off. </li>
+        <li>General -> Stream language row: Make the Language row the first row inside Game category. PeekView also follows this setting.</li>
+        <li>Remote shortcuts: Swap chats added</li>
+        <li>Remote shortcuts: Play/Pause added</li>
+        <li>Remote shortcuts: Menu button added. Tip: On the NVIDIA Shield you can Customize the Menu button. Personally i've changed it to short: "Menu" command, long: "Long press Menu", double press: Open Settings. You need to be on the lastest Shield update!</li>
+        <li>Stream: Show stream navigation preview cards</li>
+        <li>Stream: Show stream navigation cards for Multi view</li>
+        <li>Stream: Show Preview cards when you open the Bottom bar</li>
+        <li>Stream: Show the thumbnail part of the preview card</li>
+        <li>Stream: Viewbot / embeded stream detector. This is for fun, don't keep it on, because it slows down the BottomBar</li>
+    </ul>
+
+    <h3>Fix:</h3>
+    <ul>
+        <li>Followed Game section is working again</li>
+        <li>Multiple Twitch API change related issues</li>
+        <li>Recommendation channels shows the correct preview image (Thanks Jman100) This was fixed in a previous version</li>
+        <li>FireTV: fixed "Stream stopped" issue when you tried to watch specific type of games. Exp.: Pokémon, TrackMania2, new SpongeBob (Thanks Dev8 and SalmonMax)</li>
+        <li>VOD past broadcast didn't loaded more then a 100 streams (Thanks Athey)</li>
+        <li>App won't restart if you turn on or off your Bluetooth keyboard</li>
+        <li>Chat: replaced the gif emote library. This should fix that rare bug, when multiple gif emotes were played on the same emote</li>
+        <li>Tutorial crashed when the system language is set to a "right to left" language like Arabic. In this case i had to disable the tutorial, this is a framework issue. The tutorial still works with LtR languages. (Thanks Nomad)</li>
+        <li>Fire TV: Search is working now</li>
+        <li>Stream Category: ability to follow a game has been removed.</li>
+    </ul>
+
+    <hr>
+    <h1>v1.3.7.4 (2020.11.06)</h1>
+    <ul>
+        <li>New login option: login with Turbo, check the 30days option. You might have to relog every 30 days. Please, only use this option if you actually have a Turbo subscription. You're not ticking anyone.</li>
+        <li>My final attempt to "fix" ads, and i would be surprised if this will last for long. We are running out of options, you have to seriously consider Turbo if you want an ad-free experience. I'm not kidding.</li>
+        <li>The way i see it, the TV user base is a bit different from the average twitch user. You either lucky and your parents got you a tv, or you are an adult who probably can pay for a subscription service.</li>
+        <li>Don't get me wrong, i don't want to tell you how you should spend your money, but this "cat and mouse" game lasted this long, because the cat allowed it. No app or script blocked ads in the past. Twitch simply left loopholes open and we used those.</li>
+    </ul>
+
+    <hr>
+    <h1>v1.3.7.3 (2020.11.04)</h1>
+    <ul>
+        <li>Changed when the remote settings are loaded. I also load them when you get back to the Main screen. </li>
+    </ul>
+
+    <hr>
+    <h1>v1.3.7.2 (2020.10.28)</h1>
+    <ul>
+        <li>Fixed the ad issue. This won't work, if you are blocking github host with firewall or Pi-hole.</li>
+    </ul>
+
+    <hr>
+    <h1>v1.3.7.1 (2020.10.01)</h1>
+    <ul>
+        <li>Fixed the ad issue</li>
+        <li>New beta soon</li>
+    </ul>
+
+    <hr>
+    <h1>v1.3.7 (2020.05.24)</h1>
+
+    <h3>Switching between channels</h3>
+    <ul>
+        <li>Using the DPAD LEFT or RIGHT button (and PROG/Channel UP/Down if you have those on your remote) while watching a stream will switch between channels</li>
+        <li>You can switch between streams that are in the same Category. If you opened A streamer from your Followed row, you will switch between your Followed streamers. But if you open the <b>same</b> streamer from exp.: Minecraft, you will switch between other Minecraft streamers.</li>
+        <li>Works with every category, except with Featured streams, because most of those streams are randomized.</li>
+        <li>One thing to note, that i don't maintain an internal list for every given category like i do, while you browse a row in the Peekview or on the Main screen. Everything is up-to-date. Which means, while you are switching between channels, you can run into the same channel multiple times as they lose viewers (exp. after getting hosted by someone).</li>
+    </ul>
+
+    <h3>Chat</h3>
+    <ul>
+        <li>Show GIF emotes, this can be turned off in the Settings</li>
+        <li>Moderated messages will be removed, this can be turned off in the Settings</li>
+        <li>Support for modified twitch emotes</li>
+    </ul>
+    
+    <h3>General</h3>
+    <ul>
+        <li>Themes: 2 new themes are added, Dark grey and Night mode ("AMOLED")</li>
+        <li>Accent colors: for ONLY these two themes, you can choose a accent color</li>
+        <li>User profile added to the Settings row</li>
+    </ul>
+
+    <h3>Settings</h3>
+    <ul>
+        <li>General: Accent colors</li>
+        <li>Chat: Show GIF emotes (ON by default)</li>
+        <li>Chat: Hide deleted messages (ON by default)</li>
+        <li>General: Stream Preview -> Compatibility mode: If you see a black frame when entering and leaving a card while the Preview is on, this option eliminates that glitch. You're trading video resolution for smooth animation. App restart required! Since overall this provides a better experience it's ON by default.</li>
+    </ul>
+    
+    <h3>Channel profile</h3>
+    <ul>
+        <li>If the channel hosts someone, you can open the target stream</li>
+        <li>The normal "offline" button takes you to "offline chat"</li>
+    </ul>
+
+    <h3>Fix</h3>
+    <ul>
+        <li>VOD: change video quality won't restart the VOD</li>
+        <li>Stream: after hosting, the hosted channel's uptime wasn't correct</li>
+        <li>Stream: BottomBar: due to API changes, channel follow status was incorrect. Even if you followed the channel, it showed that you didn't. </li>
+    </ul>
+
+    <hr>
+
+    <h1>v1.3.6 (2020.04.28)</h1>
+
+    <h3>Home screen channels</h3>
+    <ul>
+        <li>3 channels are supported, Followed, Featured, Top streams (this is active by default).</li>
+        <li>I only update these channels when you actually activate them, so the first time don't freak out if they are empty. You can either wait for the next update or close the app for a "forced update". </li>
+        <li>Added a new setting to General. It's ON by default. Opening a stream from the home screen and pressing Back button will bring you into the app. Turning it off, the Back will land you on the home screen.</li>
+    </ul>
+
+    <h3>VOD history</h3>
+    <ul>
+        <li>VOD settings: *NEW* Remove watched VODs from the VOD history</li>
+        <li>VOD settings: *NEW* Clear VOD history</li>
+        <li>VOD settings: *NEW* Auto hide VOD history row if the last accessed VOD in it is older then X days</li>
+        <li>Long pressing a VOD history card will removes it from the VOD history</li>
+    </ul>
+
+    <h3>Tutorial</h3>
+    <ul>
+        <li>Added a tutorial for the first time users.</li>
+    </ul>
+
+    <h3>Settings</h3>
+    <ul>
+        <li>All VOD related settings has a separate menu.</li>
+        <li>Miscellaneous: *NEW* Show tutorial again</li>
+        <li>General: Back button behavior for Channels</li>
+    </ul>
+
+
+    <h3>Stream</h3>
+    <ul>
+        <li>Bottom bar: 'Fast forward' and 'Follow channel' buttons are swapped.</li>
+        <li>Bottom bar: *NEW* mute/unmute Peekview Previews</li>
+    </ul>
+    
+    <h3>Channel profile</h3>
+    <ul>
+        <li>Added the Channel's current title. Some streamers use the title as announcement for they next stream. </li>
+    </ul>
+
+    <h3>Chat</h3>
+    <ul>
+        <li>"Ban support": for you were a naugthy boy or girl, i've added support for banned chat. If you are banned on a channel, you can no longer see the chat. In that case the app will announce this in the chat and reconnects like you are "not logged in". So you can see the chat, but can't write. <br> Be careful with the M <img src="https://cdn.frankerfacez.com/emoticon/456877/4" alt="" height="30" width="30"> DS!</li>
+    </ul>
+
+    <br>
+    <hr>
+    <h1>v1.3.5 (2020.04.14)</h1>
+    <h3>Alternative login</h3>
+    <ul>
+        <li>I forgot to mention that when you read the QR code, in Chrome request the Desktop Site, because by default it will redirect you to the mobile site, and you can't login.</li>
+        <li>I added this information to the instructions</li>
+    </ul>
+
+    <h3>Peekview</h3>
+    <ul>
+        <li>Changed the card layout, it's two rows now with the channel badge icon. It looks similar to the main screen cards.</li>
+    </ul>
+
+    <br>
+    <hr>    
+    <h1>v1.3.4.1 (2020.04.05)</h1>
+    <h3>Alternative login</h3>
+    <ul>
+        <li>Added a new login method, which should work in every case. If you couldn't login in with the original way you should try this one.</li>
+        <li>In the future i will add a similar but less cumbersome login method, which will be the default</li>
+        <li>If for whatever reason the twitch mobile app opens right after you opened the link, try to get the link with a separate QR code reader app and manually paste it into Chrome.</li>
+    </ul>
+
+    <h3>Fix:</h3>
+    <ul>
+        <li>Language row: recently Language row contained all the streams instead of just the selected language</li>
+        <li>Stream: fixed the Chat resize and Multiview interraction</li>
+        <li>Stream: Peekview is in front of the Multiview</li>
+        <li>VOD: fixed a Chat visibility and VOD seek interraction</li>
+        <li>VOD: player control buttons visibility improved, theme colored</li>
+        <li>Various other fixes</li>
+    </ul>
+
+    <hr>
+    <h1>v1.3.4 (2020.02.28)</h1>
+
+    <h3>Stream preview</h3>
+    <ul>
+        <li>With this new version i introduce a pretty cool feature called 'Stream preview'. Selecting any live stream card on the UI will start to playback the stream on that card itself.</li>
+        <li>The feature works both on the Main/Category/Search UI and the Peek view. </li> 
+        <li>Preview video played at 720@60 max.</li>
+        <li>Some bad news. If multiview never worked for you previously, previews will not work either. I can't help you with this, i'm sorry, this is beyond my pay grade. It's a hardware limitation or a compatibility issue with ExoPlayer. My 2019 Shield is able to playback a stream, a multiview and the preview simultaneously without any issue. Meanwhile my X900F Bravia can only playback two streams, it's either the preview or the multiview. I'm aware that some lower end devices can only playback one stream. If you can only use 2 simultaneously streams, turn on 'Compatibility mode'.</li>
+    </ul>
+
+    <h3>VOD History</h3>
+    <ul>
+        <li>Added a new row on the Main screen, this holds your recently accessed VODs</li>
+        <li>This is a new system, VODs will only show up after this patch</li>
+        <li>The feature is separate from Twitch's 'Continue watching' section</li>
+        <li>VOD info is locally cached, this means the streamer can delete they VOD, but the deleted VOD will show up in the row.</li>
+        <li>The feature works with remote shortcut: 'Save stream position for VODs', but it will show incorrect information until you open the final, finished VOD</li>
+    </ul>
+
+    <h3>Settings</h3>
+    <ul>
+        <li>General: 'Show Stream preview' (ON by default)</li> 
+        <li>General: 'Preview audio for Main/Category/Search', also there is a dedicated button for the same setting in the Main can Category view</li>
+        <li>Stream -> Peekview: 'Show Stream preview' (ON by default)</li>
+        <li>Stream -> Peekview: 'Play audio for the preview' (OFF by default) The main view's audio is reduced to 25% while the preview is playing</li>
+        <li>Stream -> Peekview: 'Compatibility mode' (OFF by default)</li>
+        <li>Added a couple of new icons for various settings.</li>
+    </ul>
+
+    <h3>Peekview:</h3>
+    <ul>
+        <li>If 'Stream preview' is ON, the selected card is bigger (from 117% to 150%) so you can see the preview better.</li>
+        <li>The selected card stays in the middle while scrolling</li>
+        <li>If you experience any issue with the Previews, i recommend you to turn this feature off.</li>
+    </ul>
+
+    <h3>Search</h3>
+    <ul>
+        <li>Previews added to Stream cards</li>
+    </ul>
+
+    <h3>General</h3>
+    <ul>
+        <li>Main UI's cards are redesigned.</li>
+    </ul>
+
+    <h3>Channel profile</h3>
+    <ul>
+        <li>Added a 'Live status' button, this has the default focus, which means you won't accidentally unfollow someone</li>
+        <li>It shows the currently opened channel's live status (live/offline). You can open the stream directly, if it's live.</li>
+        <li>Tweaked the colors, button's text/selection should be nice in most cases</li>
+    </ul>
+
+    <h3>Stream:</h3>
+    <ul>
+        <li>The stream loads noticeably faster (this includes multiview as well)</li>
+        <li>If the Video quality is set to Auto (that's the default), the video's FPS will be shown next to the resolution.</li>
+    </ul>
+
+    <h3>VOD:</h3>
+    <ul>
+        <li>RIGHT and LEFT buttons will seek forward/backwards +/- 10 seconds (VLC style). </li>
+    </ul>
+
+    <h3>Remote shortcut</h3>
+    <ul>
+        <li><b>NEW:</b> Change chat background color. In the future i will add this to the UI, bundled with the ability to change chat width.</li>
+        <li>Off topic on chat background color: If you don't have an OLED tv, i highly recommend you to use the Grey chat background in side-by-side mode (Settings-> Chat-> Chat background color in full screen). You can test this out, but in my experience using the black chat background reduces the color dynamics of the video. Mainly killing the dark/shadowy areas.</li>
+    </ul>
+    
+    <h3>Fix:</h3>
+    <ul>
+        <li>VOD: you can move up and down between the seek bar and the media control buttons. Previously it was a 'one way street'.</li>
+        <li>In the previous patch i mentioned that both reruns and live streams appeared 'live' in the followed section. Since then Twitch fixed they API, so everything should show up correctly.</li>
+        <li>Half fix for 'Follow Categories'. Twitch removed the API that i used to follow/unfollow categories. Found a newer one, but... you can only follow categories, but can't unfollow. Better then nothing, right? ¯\_(ツ)_/¯ </li>
+        <li>VOD Chat: Filter user / word didn't worked (Thanks SalmonMax!)</li>
+        <li>Channel profile: didn't load the VODs in a rare situation</li>
+        <li>Past broadcast row won't show duplicates</li>
+        <li>Chat message parsing issue</li>
+        <li>Chat didn't worked if you watched a streamer who's name had "asian characters" in it.</li>
+    </ul>
+    
+    <h3>Known fact:</h3>
+    <ul>
+        <li>Only the VOD history has the new VOD card with progressbar and that's fine</li>
+    </ul>
+
+    P.S.: If you have trouble with login, make sure your 'Android System WebView' is up to date.
+
+    <hr>
+    <h1>v1.3.3.1 (2020.02.22)</h1>
+    <h3>Fix:</h3>
+    <ul>
+        <li>Login issue</li>
+        <li>Peekview wasn't showing</li>
+        <li>If the default Stream Video Quality was set the 'Source' the playback didn't worked, and Video Quality constained a lot of "nonsense". </li>
+    </ul>
+
+
+
+    <hr>
+    <h1>v1.3.3 (2020.01.23)</h1>
+
+    <h3>Chat:</h3>
+    <ul>
+        <li>Support for /me command. This is the command that turns your message equal to your user name color.</li>
+    </ul>
+
+    <h3>Fix:</h3>
+    <ul>
+        <li>VOD chat: improved message update rate</li>
+        <li>Peekview: card selection misbehaved when you reached the end of the row</li>
+        <li>Followed streams are ordered by viewer count in a descending order. The out of order issue was because Twitch changed the api, for no good reason.</li>
+        <li>Stream: Speed up BottomBar animation to 125ms (from 250ms)</li>
+    </ul>
+
+   <h3>Known issues:</h3>
+    <ul>
+        <li>Can't distinguish 'live' streams from 'reruns' anymore in the Followed section, this is due to the previously mentioned API change. So 'reruns' appears as 'live' streams.</li>
+    </ul>
+    <hr>
+
+    <h1>v1.3.2 (2020.01.01)</h1>
+
+    
+    <h3><img src="https://cdn.betterttv.net/emote/566ca1a365dbbdab32ec055b/1x" alt="" height="28" width="84">  VOD Chat  <img src="https://cdn.betterttv.net/emote/566ca1a365dbbdab32ec055b/1x" alt="" height="28" width="84"></h3>
+    <ul>
+        <li>Everything that you can do in Live stream view is possible in the VOD view, including Chat / Multiview modifications, Peekview, ect. But keep in mind that this view is mainly for VODs, so even tho you can open streams from the Peekview, don't be surprised that you won't see the live chat. In the future i will unify the VOD and Live stream experience.   </li>
+        <li>In the VOD view can open the PeekView by LONG PRESSING the DPAD_UP</li>
+        <li>Previously you were able to control the VOD player with Play/FF/RW buttons on your remote. This has been removed, since these buttons are reserved for the Remote Shortcuts, and there is no remote shortcut for this playback functionality. You have to use the UI video controls.</li>
+    </ul>
+
+    <h3>Chat:</h3>
+    <ul>
+        <li>The message that @mentions you will be highlighted.</li>
+    </ul>
+    
+
+    <h3>Remote Shortcut</h3>
+    <ul>
+        <li>*NEW*: open Stream in an External Player. So you can open the stream in a pop-up player for example: Best Video Popup Player. You need to sideload it, but don't even try with without an airmouse or Shield's Remote App. The advantage of this over the framework supported PIP is that these apps are resizable and movable. None of these are possible with the Android TV framework's PIP. You need to enable a special permission to make this work.
+            <b>Shield:</b> Settings -> Apps -> Special app access -> Display over other apps
+        </li>
+        <li>*NEW*: save the currently watched LIVE stream's position as a VOD Resume point, so you can continue watching the VOD from this, saved position.</li>
+        <li>*NEW*: pause chat. Keep in mind that messages between paused and the resumed state will be lost.</li>
+    </ul>
+
+
+    <h3>General:</h3>
+    <ul>
+        <li>Search: Channel results are ordered by they follower count in descending order</li>
+    </ul>
+
+    <h3>Fix:</h3>
+    <ul>
+        <li>Updated BTTV emote api, which caused messages not showing / missing emotes.</li>
+        <li>Settings didn't closed on a single BACK action</li>
+        <li>Chat: 'Video + side by side' and 'Show chat' settings should work as expected. Which means that using 'Show Chat button' should put the view into side-by-side mode and vice versa.</li> 
+    </ul>
+
+
+    <hr>
+    <h1>v1.3.1 (2019.12.22)</h1>
+
+    <h3>Settings:</h3>
+    <ul>
+        <li>Stream: *NEW* Remote shortcuts: you can customize the Play, Fast Forward and Previous remote buttons</li>
+        <li>Stream: Show the online viewer and streamer count (ON by default). It's the same thing just like on the Main screen</li>
+    </ul>
+
+    <h3>Stream:</h3>
+    <ul>
+        <li>Changed the Control Buttons colors, it follows your currently active theme color</li>
+    </ul>
+    <h3>Fix:</h3>
+    <ul>
+        <li>Long press refresh inside Categories works again (thx LAM09)</li>
+        <li>Followed streams and categories were missing from Peekview when you resumed the app from the background in a certain case (thx kurtdh) </li>
+    </ul>
+    <hr>
+
+
+    <h1>v1.3.0 (2019.12.17)</h1>
+    <h3>PeekView 2.0</h3>
+    <ul>
+        <li>It has multiple rows now. Everything that you can access on the Main screen you can access in PV, except Channel profiles, Past Broadcasts and the Settings row</li>
+        <li>The rows visibility obeys your settings in General -> 'Show/hide rows on Main screen' and 'Stream language row'. So if you hid something on the Main screen, that row won't show up in PV.</li>
+        <li>By default the topmost row shows the same category that you are already watching. So if your currently viewed streamer plays Apex, this row will show every Apex streamer. </li>
+        <li>If a row is empty (exp. non of your followed steamer are streaming currently), the row indicator temporarily turns red and the row is skipped.</li>
+    </ul>
+
+    <h3>Stream:</h3>
+    <ul>
+        <li>Video quality: the menu got revamped. Changing quality should be much easier now.</li>
+        <li>Chat size and position buttons are merged into one. Remote shortcut: Rewind/Prev</li>
+        <li>Multiview size and position button added. Remote shortcut: Forward/Next</li>
+        <li>Both of these edit modes can be closed by the BACK, DPAD_CENTER buttons, or toggle it with the remote shortcut</li>
+        <li>New icon for LIVE and RERUN on the Peekview card</li>
+        <li>I've changed the Play/Pause shortcut: short press -> Video+Chat side-by-side mode, long press -> Chat show/hide</li>
+        <li>Tooltips on Control buttons, you can turn this off in the Settings -> Stream</li>
+    </ul>
+
+    <h3>Chat:</h3>
+    <ul>
+        <li>Added Partner, Prime, VIP and Broadcaster icons. You can hide the Prime icon in Settings -> Chat.</li>
+    </ul>
+
+
+    <h3>Settings:</h3>
+    <ul>
+        <li>Chat: font size (this also scales emotes and chat window width)</li>
+        <li>Chat: new window sizes from 50,100% to 25,33,50,66,75,100%</li>
+        <li>Chat: new window positions</li>
+        <li>Stream: Multiview position</li>
+        <li>Stream: Multiview size</li>
+        <li>Stream: Video + chat side by side scale mode: Fit to screen or Center crop</li>
+        <li>Stream: *NEW* Clock settings. You see the current time and date during a stream, by turn on the control buttons. You can also turn on 3 customizable "World Clock". </li>
+        <li>Stream: Show tooltips on control buttons (ON by default)</li>
+        <li>"Tree icon" removed, and replaced with an audio swap button. If you have a Multiview open you can swap between the two video's audio. Either with this button or long pressing your DPAD Down button.</li>
+    </ul>
+
+    <h3>General:</h3>
+    <ul>
+        <li>Main screen: remote shortcuts: Play/Pause button: Refresh, Rewind button: open Settings</li>
+        <li>Changing a theme will automatically restarts the app. The app should restart in a couple of seconds with your selected theme.</li>
+        <li>Exoplayer updated to 2.10.8</li>
+        <li>Added Google Firebase Crashlytics, Analytics, Performance. These are for more detailed crash reports, app usage and performance numbers. With these information i can improve the app reliability and performance in the future.</li>
+        <li>Project updated to AndroidX</li>
+        <li>Lowered a couple of unnecessarily long UI animations</li>
+        <li>Added a reminder to the Main screen when a new app version is released</li>
+    </ul>
+
+    <h3>Fix:</h3>
+    <ul>
+        <li>Watching a stream then going back to the OS home screen, and then launching the app again with it's icon, should resume the stream, instead of landing on app's Main screen.</li>
+        <li>Fixed a crash which occurred in the Settings</li>
+        <li>Show the correct uptime in hours and minutes if the stream is up for more then 24h (thanks LAM09)</li>
+        <li>Empty rows are removed on the Main screen, so if no followed stream is live, the row is hidden</li>
+        <li>'Video + chat side by side by default' and 'Auto show chat on playback' works as expected. Keep in mind that side-by-side mode has 3 states: Normal, Fit to screen, Center crop. If 'Auto show chat on playback' is OFF, side-by-side's default state will be in Normal mode. So if you press 'Show Chat' in this state, nothing will happen. You have to enter side-by-side mode first (fit to scren / center crop), then 'Show chat' will behave as expected.</li>
+        <li>Channel profile: Past broadcast row has the correct profile color</li>
+        <li>NVIDIA Shield's menu or Sony Bravia's Action Menu won't pause the stream anymore.</li>
+    </ul>
+    
+    <h3>Known issues:</h3>
+    <ul>
+        <li>Twitch changed they APIs and you are unable to follow/unfollow categories. There is a possible way to circumvent this, so i might be able to fix it in the future</li>
+    </ul>
+
+    <center><h4> Merry Christmas and a Happy New Year!</h4></center>
+    <hr>
+
+    <h1>v1.2.5 (2019.11.14)</h1>
+    <p>If you are using any other 3rd party Twitch apps you might noticed that, all the sudden they have a lot of issues. We don't really know the actual reason behind this. Maybe Twitch is changing the APIs or the servers are having performance issues. Some APIs are working correctly then a day later we can't access them anymore, few hours later it's fine again. ¯\_(ツ)_/¯</p>
+
+    <p>Whatever is going on at Twitch, i'm hoping that it will be solved soon, and that "solution" won't affect us in any negative way. Twitch is using it's own APIs, meanwhile we - the plebs - are using APIs for 3rd party developers. This is why the official Twitch products are working correctly while our apps are failing.</p>
+
+    <h3>VOD:</h3>
+    <ul>
+        <li>Fast forward / rewind button steps: using the bottom video search bar you can skip through the VOD in 20 steps (5% per step). This is the default. But using the FF or Rewind buttons, from now on, you can move much slower in 200 steps (0,5% per step). In the future i will provide a proper -/+ 30sec or 1 minute buttons for more precision. So use the search bar for quick movement, and then use the buttons for fine steps.</li>
+    </ul>
+
+    <h3>Chat:</h3>
+    <ul>
+        <li>Show/hide with Play, Play/Pause buttons</li>
+        <li>Change size with Rewind, Media Previous buttons</li>
+        <li>Change position with Forward, Media Next buttons</li>
+    </ul>
+
+    <h3>Fix:</h3>
+    <ul>
+        <li>Chat: Previously rectangular emotes were incorrectly scaled, this is fixed. </li>
+        <li>VOD: It's working again, but you can't access Sub-only VODs. That's the only way to fix it currently.</li>
+        <li>Followed Games row loads again, for a while...</li>
+    </ul>
+
+
+    <hr>
+
+    <h1>v1.2.4 (2019.08.04)</h1>
+    <h3>Fix:</h3>
+    <ul>
+        <li>Multiview: swapping audio should work now</li>
+        <li>MultiView: removed a "black out" animation during view swap, on a slower device you might see some graphical artifact during the swap.</li>
+        <li>Fixed Notifications on Pie</li>
+    </ul>
+
+    <h3>MultiView:</h3>
+    <ul>
+        <li>DPad_DOWN short press: swap between the views</li>
+        <li>DPad_DOWN long press: swap the <b>audio</b> between the views</li>
+    </ul>
+    <hr>
+
+    <h1>v1.2.3 (2019.07.31)</h1>
+    <h3>Fix:</h3>
+    <ul>
+        <li>Video playback works with Pie now. Previously when you opened a stream, the stream was "offline".</li>
+        <li>Fixed a lot of memory leaks. "Stats for Nerds" is the only thing that leaks memory, i'm waiting for the library's maintainer to fix it.</li>
+    </ul>
+
+    <h3>General:</h3>
+    <ul>
+        <li>Google Assistant: you can open the app with voice command, like 'open/start Sound TV'</li>
+        <li>Stream should start in 1080p immediately, instead of 720p and switching up to 1080p right after it</li>
+    </ul>
+
+    <h3>Stream:</h3>
+    <ul>
+        <li>Video size button <td><img src="video_size.png" alt="" height="40" width="40"></td> has 3 states now: Normal, Shrink the view and keep the aspect ratio and Crop Zoom. This will cut off the sides of the video, but keeps the video height full screen.</li> 
+    </ul>
+
+    <h3>Known issues:</h3>
+    <ul>
+        <li>In the Channel profiles, video cards has the default theme color, instead of using the profile's color</li>
+        <li>Chat stops working for no reason. This affects the Shield and FireTV users, which is odd, because it works fine on Bravia or on the MiBox. I'm working on this.</li>
+    </ul>
+
+    This patch was in the works for a while now, and this quick Pie release for the Shield got me pants down, so i had to release. But this patch also has some sneak peek for the future. I don't do any "serious" development right now, i will start doing that ~mid-late September, but i included something in this build.
+
+    <h3>Early preview:</h3>
+    <h4>Multi view:</h4>
+    <ul>
+        <li>Opening the Peekview and long pressing on a card, the MultiView will open, with the selected stream.</li>
+        <li>With Dpad Down, you can swap between the two opened streams.</li>
+        <li>Bob Ross mode <td><img src="bob_ross.png" alt="" height="40" width="40"> is repurposed. With this you can swap the audio between the two stream. I will remove the Bob Ross mode in the future, because it's pointless now.</li>
+        <li>When Multiview is active, opening anything in the Peekview will open it in the Multiview</li>
+        <li>You can close the Multiview by long pressing on a card again, or pressing the Back button.</li>
+        <li>Right now the Multiview is in Auto quality, and you can't change it.</li>
+        <li>There is no Chat for the Multiview, but in the future there will be.</li>
+        <li>There will be an audio only mode, so Multiview will be audio only, and you can watch something on the main, and listen to someone else.</li>
+        <li>You might experience issues with this, because it's in early development. If your device is dropping a lot of frames (both streams are slow), this might due to it being underpowered. So i only expect this feature to work with 2017+ Bravias, Shield and with the Mibox. It didn't even worked with the FireTV.</li>
+    </ul>
+
+    <hr>
+
+    <h1>v1.2.2 (2019.04.14)</h1>
+    <h3>Stream:</h3>
+    <ul>
+        <li>Finally i managed to fix the main reason why the app never performed as good as the original app in terms of data loading / buffering. This also means that the previous update's buffering settings are unnecessary. Although i won't remove the ability to change the these settings, if you need them for some reason. But meanwhile i resetted your settings if you did setup something custom. </li>
+        <li>This fix should solve your (micro)buffering issues if you had any.</li>
+    </ul>
+
+    <h3>Settings</h3>
+    <ul>
+        <li>Miscellaneous: Turn on stats on stream start</li>
+    </ul>
+    <br>
+    <hr>
+
+    <h1>v1.2.1 (2019.04.08)</h1>
+    <h3>Chat:</h3>
+    <ul>
+        <li>You can see the chat even if you're not logged in, but you can't send messages</li>
+    </ul>
+
+    <h3>Stream:</h3>
+    <ul>
+        <li>Settings: 'Buffering settings' You can change the buffering settings if you have problem with playback. If that's the case, increase 'BUFFER_FOR_PLAYBACK_MS' and 'BUFFER_FOR_PLAYBACK_AFTER_REBUFFER_MS'. </li>
+    </ul>
+
+    <h3>Fix:</h3>
+    <ul>
+        <li>Chat: missing subicons</li>
+        <li>Game artworks: since some games change they artwork seasonally (exp.: Fortnite, Overwatch), the app didn't updated these artworks immediately, sometimes it took a week or more. From now on, the app redownloads them once every day.</li>
+        <li>Vod playback: Auto quality should be more reliable, instead of constantly switching resolutions.</li>
+    </ul>
+    
+    <h3>On ads:</h3>
+    <ul>
+        <li>If you are in the US, you might noticed the ads pre-stream or mid stream. This is because Twitch is testing it's SureStream tech, which embeds ads INTO the video stream. From my brief research, i could do something about it, but i won't. The main reason is quite simple, i would brake Twitch TOS. Which i'm already doing, by getting the direct HLS stream, instead of using they Javascript player (which would be a ton of fun for dual core Bravia users <img src="https://cdn.frankerfacez.com/emoticon/278909/1">). So i would draw the line here.</li> 
+        <li> If you want to avoid ads, i would suggest: </li>
+        <ul>
+            <li>Twitch Nitro ($8.99 / month): Ad-Free Viewing (with limited exceptions)</li>
+            <li>Use a VPN service. You don't even have to target EU servers, maybe a server in the next state will be sufficient. I wont name the VPN provider, but from my testing i only got ads on they 'US East' server, meanwhile DC, NY, Florida, LA, etc were all "clean". Also with VPN apps, you can use per-app settings. So you don't have to force all your traffic through the VPN, you can set it only for my app.   </li>
+        </ul>
+     </ul>
+    <br>
+    <hr>
+
+    <h1>v1.2 (2019.02.25)</h1>
+    <h3>General:</h3>
+    <ul>
+        <li>Fixed a bug that "silently" crashed the app. You should feel a significant smoothness in scrolling on a row or between rows, exp.: on the Main screen</li>
+        <li>Moved most of the API loadings to Ion, this speeds up loading/reload times</li>
+        <li>ExoPlayer (2.9.5)</li>
+        <li>Setting: Auto refresh (explained in the Settings, ON by default and 20min)</li>
+        <li>Setting: UI Themes (red, blue, purple, green, pink, orange, yellow, grey)</li>
+    </ul>
+    <h3>Chat:</h3>
+    <ul>
+        <li>Improved Chat startup time</li>
+        <li>Significantly improved Emote loading times. This puts the app on par with the desktop experience. It's able to keep up even with xQc's "quality chat".</li>
+        <li>Setting: Show/hide Gifted subs messages in the chat (ON by default)</li>
+        <li>Improved readability of sub and gifted sub messages</li>
+        <li>FFZ channel enabled emotes are activated</li>
+        <li>Setting: Open soft keyboard when the send Chat message window is opened from the UI (ON by default). If you open the chat window with the keyboard shortcut (J or F) this will not affect you, even when the setting is ON.</li>
+        <li>Setting: Filter out popular bots and they command from chat</li>
+        <li>Setting: Filter 'chat bots' by name (OFF by default)</li>
+        <li>Setting: Join Chat (ON by default)</li>
+        <li>Setting: Chat delay (no delay by default)</li>
+        <li>Updated the ASCII dick filter with new characters (yes, there is such thing)</li>
+    </ul>
+
+    <h3>Notification: (NEW)</h3>
+    <ul>
+        <li>You get a notification when your followed streamer went live. This works even when the app is in the background.</li>
+        <li>The check runs every minute.</li>
+    </ul>
+
+    <h3>Stream:</h3>
+    <ul>
+        <h4>PeekRow: (NEW)</h4>
+            <li>With the DPAD_UP button on your remote, you can open a row of cards on the bottom of the screen while watching a stream. The row contains the Main screen's "Followed" row, so you can switch between your Followed online streams without going back to the Main screen.</li>
+            <li>Few settings added under Stream -> PeekRow</li>
+
+
+        <h4>General:</h4>
+        <li>Hosting is now supported, so if your current streamer starts to host someone else, the app automatically redirects to the hosted streamer.</li>
+        <li>Better playback error feedback, this is true for VOD as well.</li>
+        <li>Stat for nerds button: if you turned on the feature, you can open it now from the UI.</li>
+        <li>Settings: set default VOD video quality, Auto or Source (Default is Auto)</li>
+    </ul>
+
+    <h3>Fix:</h3>
+    <ul>
+        <li>Followed channels and games limit 25->100</li>
+        <li>Follower count formatting</li>
+        <li>If you are subbed to a channel, but you still can't access the sub-only VODs, a logout+login should fix that. In the near future i will fix this.</li>
+        <li>Fixed an issue that caused lower fps(<30fps) in the Stream Category while scrolling on Oreo</li>
+        <li>Fixed an issue when opening a Channel profile, colors didn't loaded in a certain situation</li>
+        <li>Fixed an issue when you couldn't see chat, because you had special characters in your name</li>
+        <li>Fixed a unresponsive UI bug on Oreo. Previously, after a while, the Main screen did not reacted to 'Refresh' and when you tried to watch something the Stream/VOD didn't loaded.</li>
+    </ul>
+
+
+    <h3>Etc:</h3>
+    <ul>
+        <li>Removed Card caching setting, because it's not necessary anymore.</li>
+        <li>Notification on the Main screen if you received a new app version. </li>
+    </ul>
+
+    <br>
+
+
+    <br>
+    <hr>
+
+
+
+
+
+
+
+
+
+
+    <h1>v1.1.1 (2018.10.24)</h1>
+    <h3>General:</h3>
+    <ul>
+        <li>Removed an unused library</li>
+    </ul>
+
+    <h3>Stream:</h3>
+    <ul>
+        <li>BottomBar: Save stream's position as a VOD resume point. This used to be only a remote shortcut function, but now you have a direct access to it on the UI.</li>
+    </ul>
+
+    <h3>Settings:</h3>
+    <ul>
+        <li>Chat: Show/hide Subscription messages in the chat</li>
+        <li>Chat: Set Chat background color in fullscreen (video, chat side-by-side or BobRoss mode) </li>
+        <li>Chat: Filter messages by user or word (personally i filter out StreamElements and Nightbot)</li>
+        <li>Stream: Show or Hide control buttons on stream startup.</li>
+    </ul>
+
+    <br>
+    <hr>
+
+    <h1>v1.1 (2018.10.20)</h1>
+    <h3>General:</h3>
+    <ul>
+        <li>Exoplayer 2.9.0</li>
+        <li>targetSdkVersion 28</li>
+        <li>Replaced Picasso with Glide (~faster image loading)</li>
+
+        <li>Changelog implemented</li>
+        <li>Privacy Policy added</li>
+        <li>About: added Bottom bar icon descriptions</li>
+    </ul>
+
+    <h3>Major features:</h3>
+    <ul>
+        <li>VOD playback with Resume. Resume position is visible on the VOD Card.</li>
+        <li>User/Channel profiles: You can access Highlights, Past broadcasts and Uploads in the Channel Profile.</li>
+        <li>Follow and Favorite channel in the Channel profile </li>
+        <li>'Past broadcasts' and 'Followed Channels' are accessible on the Main screen.</li>
+        <li>Search (Stream, Channel, Game). To have Voice Search, you have to grant RECORD_AUDIO permission.</li>
+    </ul>
+    <h3>UI:</h3>
+    <ul>
+        <li>Streamer uptime on Cards and on the Stream bottom bar.</li>
+        <li>Visual tweak in Stream category (blurred + dimmed background)</li>
+        <li>Auto refresh on app switch (Main screen and Game category)</li>
+        <li>Long press to Refresh on any Card, except Followed Channels and Settings</li>
+        <li>Long press on Followed Channels to favorite them. By favoriting a channel, makes it appear in front of the list, for easy access.</li>
+        <li>Thumbnails should show a much more recent image on Stream cards. If you turned Off Thumbnail caching (Settings->Miscellaneous) previously, you can turn it back ON.</li>
+    </ul>
+
+    <h3>Stream:</h3>
+    <ul>
+        <li>Improved stream startup time</li>
+        <li>Chat: send chat message. You can open the message window by the the icon, 'J' or 'F' keys. To close it: BACK, ESC or ENTER in an empty message window.</li>
+        <li>Channel profile icon added</li>
+        <li>3 seconds delay on chat</li>
+    </ul>
+
+    <h3>Settings:</h3>
+    <ul>
+        <li>General settings: moved few settings into this sub category</li>
+        <li>General settings: Change Video card size (normal by default)</li>
+        <li>General settings: Hide any row on the Main screen</li>
+        <li>Stream settings: Video + Chat side by side (off by default)</li>
+    </ul>
+
+    <br>
+    <hr>
+</body>
+
+</html>
