@@ -52,9 +52,118 @@
 
 <body>
     <center><h4> If you have a question or feedback, head over to the Discord channel: https://discord.gg/zmNjK2S </h4></center>
+
+    <hr>
+    <h1>v1.4_RC1 (2022.02.13)</h1>
+
+    <h3>Twitch API changes:</h3>
+    <ul>
+        <li><b>You MUST be logged in to use the app in the future!</b></li>
+        <li>You might noticed that last week the app stopped working for 1 hour on Monday and for 2 hours on Wednesday. Twitch is shutting down an old API by February 28, 2022, which is used by 99% in my app.</li>
+        <li>I forgot about this shutdown date, sorry about that. But i rushed (annual release lol) this update which is using mostly the new API, but it's not fully converted yet.</li>
+        <li>There will be 3 more partial API shutdowns, 02.14 (4 hours), 02.16 (6 hours), 02.22 (24 hours), 02.28 (permanent). I hope the app will be released to the Play Store in time.</li>
+        <li>Most streaming features will work during these downtimes. Hopefully i will finished the API refactor in the upcoming days.</li>
+        <li>This means, this version is not finished, this is why i'm calling it a "release candidate" </li>
+        <li><b>Following channels not working anymore.</b> <i>Twitch: Today, we are announcing that we will permanently shut down the Follow Channel, Unfollow Channel, Create User Follows and Delete User Follows endpoints in the Twitch API and V5 on July 27, 2021.</i> They did this to combat "Follow bots". </li>
+    </ul>
+
+    <h3>
+        Removed features due to API changes:
+    </h3>
+    <ul>
+        <li>Featured row</li>
+        <li>Global viewer / streamer counter</li>
+    </ul>
+
+    <h3>General:</h3>
+    <ul>
+        <li>New login method has been added, you can find under it the "Login (Preferred)" button on the home screen. As the name suggests this is the recommended way to login into the app from now on. With this you can login using ANY web browser on the same WIFI network, this means you can use your phone/tablet/laptop/desktop/fridge. If you're on a phone/tablet, you don't need an other device, just follow the instruction, login to twitch, copy the link, in your browser switch back to the login page, paste the link, press Submit and the app will be logged in, when you switch back to it. As a backup i've kept "Login (Web)" option, which was the old login method.</li>
+        <li>Context Menu (Long press BACK on a card): Add, Remove to/from History buttons added. You can use the 'Add to History' as a "bookmarking" tool. Let's say you browse through a row of streams, you find something interesting, but you don't want to watch it immediately. You can add it to the History, and later on it will be in the Live Stream History. Using 'Add to History' on a stream in the Live Stream History moves the stream to the front of the row.</li>
+        <li>Updated ExoPlayer to 2.15.0</li>
+    </ul>
+
+    <h3>Live Stream History</h3>    
+    <ul>
+        <li>A new row is added to the Main screen and the Peekview, this row contains the previously opened live streams</li>
+        <li>As the name suggests, it only shows the <b>currently</b> live streams</li>
+        <li>Stream Navigation (Dpad LEFT/RIGHT) works with these row items, but the selected stream will be not re-added to the History</li>
+    </ul>
+
+    <h3>Stream:</h3>
+    <ul>
+        <li>Bottom bar: how long you're watching a stream is now visible, it's next to the Streamer's Up Time.</li>
+    </ul>
+
+    <h3>Chat:</h3>
+    <ul>
+        <li>7TV emote support</li>
+        <li>Twitch GIF emote support added</li>
+        <li>Chatter's name is bold</li>
+        <li>New default Chat height added (Horizontal chat, 10%, 15%)</li> 
+        <li>New Chat mode: Horizontal chat: Chat will be 1 chat message height, full screen width and messages are scrolling to left->right or right<-left depending on if the chat was originally on the left or the right side of the screen</li>  
+        <li>Long pressing on a message will automatically opens the 'Send chat message window', with user's @Name as a mention. If the send chat window is already open, it just adds the @Name to the text field. Targeted usage: mouse or touch</li>
+        <li>'recent-messages' service added: <i>"Normally, on Twitch chat, you can't see any messages that were sent before you joined a certain channel's chat. This service fills that gap. It continuously listens to a large number of channels - and when somebody wants to open a channel's chat, their chat client can use this service to fetch a list of recent messages."</i></li>
+        <li>more info: https://recent-messages.robotty.de/</li>
+        <li>It's OFF by default, you have to manually Opt-in to use this service. This is the request of the service's developer.</li>
+        <li>Highlight message support (used with Channel points)</li>
+    </ul>
+
+    <h3>PeekView:</h3>
+    <ul>
+        <li><b>CHANGE: affecting PeekView and the MultiView interaction!</b></li>
+        <li>From now on, selecting a stream (with single click) in PeekView will <b>always</b> open in the Main view, selecting a stream (with long press) will <b>always</b> open in the MultiView.  </li>
+        <li>Previously this worked like: if no MultiView was visible, single click opened the stream in the Main view. If MultiView was visible, single click always opened the selected stream in the MultiView.</li>
+        <li>The point of this change, to unifiy the experience. Single click will always do the same thing, just like long press. Also depending on the press delay you can decide where the stream should open when the MultiView is visible.</li>
+    </ul>
+    <h3>Settings:</h3>
+    <ul>
+        <li><b>Remote shortcuts: DPad Left, Right and Down are now customizable.</b></li>
+        <li>General: Live Stream History: Clear History</li>
+        <li>General: Stream Preview: Preview quality added (720p, 480p, 360p) The setting won't be applied immediately</li>
+        <li>General: Favorites in front of Followed streams: Your 'Favorited'(⭐) channels will be in front of the Followed streams section.</li>
+        <li>General -> Filtering: Filter out rerun streams</li>        
+        <li>Stream: PeekView: Preview quality added (720p, 480p, 360p)</li>
+        <li>Stream: Stream settings / VOD settings: max 480p added. Your previous setting is reseted</li>
+        <li>Chat: new Default Chat Height values (Horizontal chat, 10%, 15%)</li>
+        <li>Chat: new Default Chat Width values (400, 450, 500, Screen width). 'Screen width' can be only accessed if it set to default and the size cannot be changed in the player.</li>
+        <li>Chat: Use 'recent-messages' service added</li>
+        <li>Chat: Chatbox vertical position added</li>
+        <li>Application info: User ID added. It helps me to identify you in my logs when you report an issue on Discord</li>
+    </ul>
+
+    <h3>Standalone version:</h3>
+    <ul>
+        <li>Standalone version is finally released, you can find it at https://github.com/S0und/S0undTV/releases</li>
+        <li>This version has it's own Auto Update system, which you can control in the Settings -> Updates menu.</li>
+        <li>Only the standalone version has the Auto update system, Google Play version does not, due to Term of Service rules</li>
+        <li>You can switch to the Beta build any time, but to recieve updates you have to change the "Update channel" to "Beta".</li>
+        <li>Future Beta versions will be published ONLY in the standalone version</li>
+    </ul>
+
+    <h3>Fix:</h3>
+    <ul>
+        <li>Chat: chat didn't scrolled in a certain case after "SwapChat"</li>
+        <li>Chat: messages didn't show up with default sub icon</li>
+        <li>Chat: during a "SwapChat" the chat message was sent to the incorrect chat. It's always sent to the currently visible.</li>
+        <li>Chat: chat didn't worked on stream startup in a specific case</li>
+        <li>Chat: Ctrl+C and Ctrl+V should works properly in the chat box without affecting the UI</li>
+        <li>Chat: Swap chat: maintain swapped chat while navigating between streams on the Main view. Chat view still resets itself after closing the MultiView or swapping the Streams. </li>
+        <li>Chat: the chat view is in front of the 'Modify Chat' info screen</li>
+        <li>Chat: Chat stopped if no new messages were sent to the channel for multiple minutes</li>
+        <li>Reduced the app's memory footprint, also fixed a previously introduced memory leak</li>
+        <li>Stream: rare 'Stream stopped' state when switching back to the app while the streamer was still live</li>
+        <li>Stream: Fast Forward (⏩) won't reset your currently selected video quality settings (Thanks ntelas)</li>
+        <li>Channel/Game Filtering: incorrectly added the first element in the list (Thanks Bakin)</li>
+        <li>Stream: Search: opening a channel profile and then opening a currently live stream from the profile should work correctly</li>
+        <li>Stream/VOD: switching away from the app and relaunching it from the Android TV homescreen should correctly resume the previous Stream / VOD</li>
+    </ul>
+    
+   <h3>Known issues:</h3>
+    <ul>
+        <li>Shield TV: opening the MultiView works inconsistently since Shield Experience 9, this should be fixed in the final 1.4 version</li>
+    </ul>
     <hr>
 
-    
     <h1>v1.3.10 (2021.01.13)</h1>
 
     <h3>General:</h3>
@@ -72,6 +181,7 @@
         <li>Increased the default emote size, which you can change in the settings.</li>
         <li>Slightly changed the chat message alignment</li>
     </ul>
+
     <h3>Settings:</h3>
     <ul>
         <li>Chat: Change Emote size</li>
