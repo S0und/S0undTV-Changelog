@@ -54,25 +54,25 @@
     <center><h4> If you have a question or feedback, head over to the Discord channel: https://discord.gg/zmNjK2S </h4></center>
 
     <hr>
-    <h1>v1.4_RC1 (2022.02.13)</h1>
+    <h1>v1.4 (2022.02.27)</h1>
+
+
+    ✅ shows the changes since RC_1
 
     <h3>Twitch API changes:</h3>
     <ul>
         <li><b>You MUST be logged in to use the app in the future!</b></li>
-        <li>You might noticed that last week the app stopped working for 1 hour on Monday and for 2 hours on Wednesday. Twitch is shutting down an old API by February 28, 2022, which is used by 99% in my app.</li>
-        <li>I forgot about this shutdown date, sorry about that. But i rushed (annual release lol) this update which is using mostly the new API, but it's not fully converted yet.</li>
-        <li>There will be 3 more partial API shutdowns, 02.14 (4 hours), 02.16 (6 hours), 02.22 (24 hours), 02.28 (permanent). I hope the app will be released to the Play Store in time.</li>
-        <li>Most streaming features will work during these downtimes. Hopefully i will finished the API refactor in the upcoming days.</li>
-        <li>This means, this version is not finished, this is why i'm calling it a "release candidate" </li>
         <li><b>Following channels not working anymore.</b> <i>Twitch: Today, we are announcing that we will permanently shut down the Follow Channel, Unfollow Channel, Create User Follows and Delete User Follows endpoints in the Twitch API and V5 on July 27, 2021.</i> They did this to combat "Follow bots". </li>
     </ul>
 
     <h3>
-        Removed features due to API changes:
+        Removed / changed features due to API changes:
     </h3>
     <ul>
         <li>Featured row</li>
         <li>Global viewer / streamer counter</li>
+        <li>✅ Past Broadcast</li>
+        <li>✅ Channel Profile: previously you could see if the selected channel is hosting someone. This has been removed.</li>
     </ul>
 
     <h3>General:</h3>
@@ -93,6 +93,21 @@
     <ul>
         <li>Bottom bar: how long you're watching a stream is now visible, it's next to the Streamer's Up Time.</li>
     </ul>
+
+    <h3>Context Menu:</h3>
+    <ul>
+        <li>✅ Button added to Favorite (⭐) channels</li>
+        <li>As a reminder you can open the Context Menu by LONG pressing the BACK button on any card. <i>Pick a card, any card!</i>💿</li>
+    </ul>
+
+    <h3>✅ Past Broadcast changes:</h3>
+    <ul>
+        <li>Due to API changes the PB row's behavior has changed. With the old API only one request was necessary to grab all your followed channel's new VODs. With the new, i have to make a request for each of your followed channels. So if you follow 150 channels, that would be 150 API requests. This is just dumb!</li>
+        <li>From now on, the app only gets the Past Broadcast for those channels that you Favorite (⭐). There is no limit on how many channels you can Favorite, but be sensible for the aforementioned reason. </li>
+        <li>The row will have the last 5 VODs for each streamer</li>
+        <li>I might explore an option to grab the PB for all of your followed channels, automatically update it exp.: once every day</li>
+    </ul>
+
 
     <h3>Chat:</h3>
     <ul>
@@ -156,11 +171,13 @@
         <li>Channel/Game Filtering: incorrectly added the first element in the list (Thanks Bakin)</li>
         <li>Stream: Search: opening a channel profile and then opening a currently live stream from the profile should work correctly</li>
         <li>Stream/VOD: switching away from the app and relaunching it from the Android TV homescreen should correctly resume the previous Stream / VOD</li>
+        <li>✅ Shield: "Experience 9.0": opening a MultiView window should work all the time</li>
+        <li>✅ Recommendation channels: Followed or Top streamers row randomly disappeared from your Android TV's home screen</li>
     </ul>
-    
+
    <h3>Known issues:</h3>
     <ul>
-        <li>Shield TV: opening the MultiView works inconsistently since Shield Experience 9, this should be fixed in the final 1.4 version</li>
+        <li>✅ Stream Navigation: only works for the first 100 streams and unable to switch channels "infinitely". This will be fixed in an upcoming patch.</li>
     </ul>
     <hr>
 
