@@ -52,6 +52,94 @@
 
 <body>
     <center><h4> If you have a question or feedback, head over to the Discord channel: https://discord.gg/zmNjK2S </h4></center>
+    
+    <hr>
+    <h1>v1.5 (2023.01.04)</h1>
+
+    <h3>Following streamer / game is back!</h3>
+    <ul>
+        <li>... sort of</li>
+        <li>You will need to use official app to actually do the follow/unfollow</li>
+        <li>Clicking the Follow 🤍 button will open a QR code, reading it should open the official app</li>
+    </ul>
+
+    <h3>Notification</h3>
+    <ul>
+        <li>New notification type added: Detailed, it has the channel's name, badge image and the current stream title</li>
+        <li>Optional: "Display over other apps" permission added. <br> 
+            Since Android Oreo and up, <b>Notification duration</b> was broken due to API changes. Granting this permission will restore this feature.</li>
+        <li>On FireOS you have to grant the permission manually though ADB: 'adb shell appops set com.s0und.s0undtv SYSTEM_ALERT_WINDOW allow'</li>
+        <li>Animation Style added (only for Android Oreo and up) (permission needed). Name of the animation and the actual animation can missmatch on custom android OSs.</li>
+    </ul>
+
+    <h3>Stream</h3>
+    <ul>
+        <li><b>Low latency <i>LITE ™</i> mode added: it's not on par with the official app, around 2-4sec behind.</b></li>
+        <li>Bottom bar: Swap Audio button renamed to Volume Control (represented with a speaker icon). From now on, you can use it all the time - previously you could only use it when the MultiView was active. Why would you want to control a stream volume when your device has it's own volume control? Let's say you want to stream music and watch a stream muted or on a lower volume.</li>
+    </ul>
+
+    <h3>Chat:</h3>
+    <ul>
+        <li>Full 7TV emote support</li>
+        <li>Updated "User-Type Chat Badges"</li>
+    </ul>
+
+    <h3>VOD:</h3>
+    <ul>
+        <li><b>You can open sub-only VODs regardless if you're subbed or not</b></li>
+        <li>Playback speed added</li>
+        <li>Vod Chapters added (tip: Long press on the button sets the playback speed to 1x)</li>
+    </ul>
+
+    <h3>Settings:</h3>
+    <ul>
+        <li>Stream: Show/hide incoming raid notification.<br><br>
+            On top of this, i've added a filter that ignores the raid notification if the raid's viewer count is <= 3. This is to combat "1 viewer andy raids" spam. </li>
+        <li>Chat: Chat background opacity: you can set this in the Settings or change it with the Remote Shortcut. You can't access it from the UI, <b>YET</b>.  </li>
+        <li>Stream: Remote shortcuts: Chat background opacity</li>
+        <li>Device specific settings: No Peekview card selection animation. When a card is selected and the inside of the card plays a video correctly, but the outer edge acts weirdly, lags behind with the playback. Amazon devices has this issue, for them it's ON by default. If you experience similar issues on your device, turn this ON.</li>
+        <li>Proxy server: Tokyo proxy server added for our 720p Korean frog frens  <img src="https://cdn.frankerfacez.com/emote/425196/4" alt="" height="30" width="40">.  So they can get 1080p once again. 
+        <br>P.S.: only use it when you actually need it.</li>
+        <li>Stream - Buffering settings removed</li>
+    </ul>
+
+    <h3>Context menu</h3>
+    <ul>
+        <li>Menu button (3 horizontal lines) will open the Context Menu. LONG PRESS Back button is still an option, if you don't have a Menu button.</li>
+    </ul>
+
+    <h3>Standalone</h3>
+    <ul>
+        <li>Beta: a newly installed Beta version will default to the 'Beta' 'Update channel', previously it defaulted to 'Stable'.</li>
+    </ul>
+
+    <h3>Fix:</h3>
+    <ul>
+        <li><b>Login: previously the app asked for re-login even when it wasn't necessary.</b></li>
+        <li><b>Login (web): fixed, but this won't change the fact that it's still "Login (Preferred)" is the recommended way to login</b></li>
+        <li><b>Chat: raid event correctly switches over to the raid's target channel</b></li>
+        <li><b>VOD: Chat should be visible once again</b></li>
+        <li>Recommendation channels: empty rows will be correctly empty, instead of showing outdated cards (Thanks p0k33m0n)</li>
+        <li>Settings: Changing the theme should restart the app once again</li>
+        <li>Peekview: sometimes it stuck and stopped loading new elements (Thanks Dev8)</li>
+        <li>VOD: if the channel didn't had custom sub icons, sub messages didn't showed up in chat (Thanks alchemistfm)</li>
+        <li>VOD: Chat stopped and didn't loaded new messages on low chat activity channels in a rare case</li>
+        <li>Followed Channels: fixed a bug which caused the most recently followed channel didn't showed up in the list</li>
+        <li>Fixed the black screen when the app is resumed from the background but the streamer is offline</li>
+        <li>When a language row was opened, StreamNavigation incorrectry treated this as a Game category row, instead of a Language row. (Thanks Harlock)</li>
+        <li>Peekview: if a streamer changed the Game category during the stream, Peekrow's Game row showed the previous game instead of the newly set one.</li>
+        <li>Peekview: Top Games shows viewer count</li>
+        <li>Stream: correctly show if the Stream is offline</li>
+        <li>Channel profile: 'Past Broadcast', 'Highlights' and 'Uploaded' VOD rows load correctly in all situations</li>
+        <li>Chat:'INVALID NICK' message after first install / update </li>
+        <li>Top Games row: it can show more then 100 elements</li>
+        <li>Fixed a crash, when the user logged out and tried to log back in</li>
+        <li>Rows didn't load new items in a case when the user used extensive amount of filtering (Thanks Dev8)</li>
+        <li>Search: multi word search queries (Thanks tony67893)</li>
+        <li>Mobile: Phone notch support is back</li>
+        <li>Mobile: Auto rotate should work correctly in landscape mode</li>
+    </ul>
+
     <hr>
     <h1>v1.4.2 (2022.06.11)</h1>
       
@@ -61,8 +149,11 @@
         <li>xQc's FFZ emote fix</li>
     </ul>
 
+
+
     <hr>
     <h1>v1.4.1 (2022.03.18)</h1>
+
     <h3>Fix:</h3>
     <ul>
         <li>Ads</li>
