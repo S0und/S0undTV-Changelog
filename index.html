@@ -52,12 +52,57 @@
 
 <body>
     <center><h4> If you have a question or feedback, head over to the Discord channel: https://discord.gg/zmNjK2S </h4></center>
+    
     <hr>
+    <h1>v1.5.7 (2023.07.28)</h1>
+
+    <h3>Settings:</h3>
+    <ul>
+        <li>Chat: Hide deleted messages: this setting got a new option, change the removed message color to grey and italic. Your previous setting was reset to the default.</li>
+    </ul>
+
+    <h3>Fix:</h3>
+    <ul>
+        <li>VOD chat: Timestamp setting was not respected. (Thanks Tears!) </li>
+    </ul>
+
+    <hr>
+    <h1>v1.5.6 (2023.07.27)</h1>
+    <h3>Stream:</h3>
+    <ul>
+        <li>Auto stream refresh: previously added feature didn't work well (as expected), so I've fixed it. Also added a few options in the settings. The app tries to reconnect 5 times, the timeout between tries is customizable, but 5 seconds is the default. </li>
+        <ul style="list-style-type: none;">
+            <li>- <b>Normal mode (default)</b>: Before the refresh, it checks if the streamer is still online. Use this if you have a good internet connection. This should handle those moments when the streamer has a small "F".</li>
+            <li>- <b>"Aggressive" mode</b>: It will restart the stream regardless if the streamer is online or not. Use this if you have a BAD or spotty internet connection. This also means if the stream ends normally it will still try to reconnect.</li>
+        </ul>
+    </ul>
+
+    <h3>Settings:</h3>
+    <ul>
+        <li>Chat: Show Timestamp</li>
+        <li>Stream: Stream auto refresh</li>
+        <li>Stream: Keep the screen on (off by default): previously the app kept the display wake even when the stream stopped. With this setting, you can control this behavior. If it's ON, it will keep the display awake all the time (old behavior), if it's OFF, it will be controlled by your TV's display timeout / screen saver.   </li>
+        <li>Stream: Stream Navigation settings have their own sub-menu, nothing new here.</li>
+    </ul>
+
+    <h3>Fix:</h3>
+    <ul>
+        <li>Followed channel is back. Streamer's follower count is removed, also the banner image is no longer accessible inside the Streamer's profile. </li>
+    </ul>
+
+    <h3>Known issues:</h3>
+    <ul>
+        <li>VOD: video quality can stuck at 480p30 for certain devices. Right now, you either set it to higher quality manually every time or set the quality to 'Source' in the VOD video quality settings.</li>
+    </ul>
+    
+    <hr>
+    
     <h1>v1.5.5 (2023.05.31)</h1>
     <h3>Fix:</h3>
     <ul>
         <li>Source error issue.</li>
     </ul>
+    
     <hr>
     <h1>v1.5.4 (2023.05.06)</h1>
     <h3>Stream:</h3>
